@@ -7,8 +7,79 @@
 \end{equation}
 Determine $a, b, $ and $c$
 }
+We have:
+\begin{equation}
+    f(T,H) = \frac{1}{2}Jqm^2 - kT\ln(2\cosh((qJm+H)/(kT)))
+\end{equation}
+Let's have $H=0$ and do a taylor series expansion about $m=0$ to fourth order since we need a $m^4$ factor.
+\begin{equation}
+    f(m) \approx f(0) + \frac{f'(0)m}{1}  + \frac{f''(0)m^2}{2} + \frac{f'''(0)m^3}{6} + \frac{f''''(0)m^4}{24}
+\end{equation}
+We can see that
+\begin{equation}
+    f(0) = 0 - kT\ln(2\cosh[(qJ(0)+H)/kT]) \rightarrow 0 - kT\ln(2)
+\end{equation}
+\begin{equation}
+    f'(0) = 0 - \frac{2kT}{2kT}\ab(\frac{1}{\cosh[(qJ(0)+H)/kT]})qJ\sinh((qJ(0)+H)/kT) = 0 - 0 = 0
+\end{equation}
+\begin{equation}
+    f''(0) = Jq  - \frac{1}{kT}(qJ)^2\ab(sech^2[(qJ(0)+H)/kT]) = Jq - \frac{1}{kT}(qJ)^2 = Jq\ab(1-\frac{1}{kT}qJ)
+\end{equation}
+\begin{equation}
+    f'''(0) = -\beta(qJ)^2(-2sech^2[(qJ(0)+H)/kT])(\tanh[(qJ(0)+H)/kT])(\frac{qJ}{kT}) = 0
+\end{equation}
+\begin{equation}
+    f''''(0) = 2\beta^2(qJ)^3\ab((-2sech^2[(qJ(0)+H)/kT])(\tanh[(qJ(0)+H)/kT])(tanh[(qJ(0)+H)/kT])\frac{qJ}{kT} + sech^4[(qJ(0)+H)/kT]\frac{qJ}{kT})
+\end{equation}
+This long expression then goes to:
+\begin{equation}
+    2\beta^3(qJ)^4(0 + 1)
+\end{equation}
+We finally get:
+\begin{equation}
+    a = f(0) = -kT\ln(2)
+\end{equation}
+\begin{equation}
+    b = \frac{qJ}{2}
+\end{equation}
+\begin{equation}
+    c = \frac{1}{12}(qJ)^4\beta^3
+\end{equation}
 \kafkasubsection{If $H$ is nonzero but small, show that there is an additional term $-mH$ in \ref{eq:fm}}
+In the linear term we have:
+\begin{equation}
+    f'(m) =  2Jqm - qJ\tanh([(qJm+H)/kT])
+\end{equation}
+When setting m to zero but have small $H$ we can use the small angle approximation to get:
+\begin{equation}
+    \tanh([(H)/kT]) \approx \frac{H}{kT}
+\end{equation}
+So now we have a term
+\begin{equation}
+    -qJ\beta mH
+\end{equation}
 \kafkasubsection{Show that the minimum free energy for $T>T_c$ and $H=0$ is at $m=0$, and that $m = \pm m_0$ corresponds to a lower free energy for $T<T_c$.}
+For $T>T_c$, we have that the coefficients of $f(m)$ are all positive. This then makes the function shaped like $m^2$ and $m^4$ which have a minima at the origin.
+For $T<T_c$, we have that the function's squared term is:
+\begin{equation}
+    qJm^2/2 - \beta qJm^2
+\end{equation}
+So now we have a point where they are equal (but oppsite) for two different m, which gives the two minima.
 \kafkasubsection{Use program \texttt{IsingMeanField} to plot $f(m)$ as a function of $m$ for $T>T_c$ and $H=0$. For what value of $m$ does $f(m)$ have a minimum?}
+$f(m)$ has a minimum at $m=0$
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Q2A.png}
+\end{figure}
 \kafkasubsection{Plot $f(m)$ FOR $T=1$ and $H=0$. Where are the minima of $f(m)$? Do they have the same depth? If so, what is the meaning of this result?}
+$f(m)$ has two minima at $m = \pm1$. They have the same result which means that the free energy is minimized for two equal but opposite $m$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Q2B.png}
+\end{figure}
 \kafkasubsection{Choose $H=0.5$ and $T=1$. Do the two minima have the same depth? The global minimum corresponds to the equilibrium or stable phase. If we quickly "flip" the field and let $H \rightarrow -0.5$, the minimum at $m\approx 1$ will become a local minimum. The system will remain in this local minimum for some time before it switches to the global minimum.}
+The two minima do not have the same depth.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Q2C.png}
+\end{figure}
