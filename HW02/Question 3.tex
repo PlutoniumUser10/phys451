@@ -1,0 +1,56 @@
+\kafkasection{
+The partition function for the $N$-spin Ising chain can be written as the trace of the $N$th power of hte transfer matrix $T$. Another way to reduce the number of degrees of freedom is to describe the system in terms of two-spin cells. We write Z as:
+\begin{equation}
+    Z = \text{Tr} \mathbf{T}^N = \text{Tr}(\mathbf{T}^2)^{N/2} = \text{Tr}\mathbf{T'}^{N/2}
+\end{equation}
+The transfer matrix for two-spin cells. $\textbf{T}^2$, can be written as
+\begin{equation}
+    \mathbf{T}^2 = \mathbf{TT} =
+    \begin{matrix}
+        e^{2K+2h}+e^{-2K} & e^h + e^{-h} \\
+        e^{-h} + e^{h} & e^{2K-2h}+e^{-2K}
+    \end{matrix}
+\end{equation}
+We require that $\mathbf{T}'$ have the same form as $\mathbf{T}$:
+\begin{equation}
+    \mathbf{T}' = c
+    \begin{matrix}
+        e^{K' + h'} & e^{-K'}\\
+        e^{-K'} & e^{K'-h'}
+    \end{matrix}
+\end{equation}
+A parameter $C$ must be introduced because matching the two equations requires three matrix elements, which is impossible with only two variables $K'$ and $h'$.
+
+}
+\kafkasubsection{
+Show that the three unknowns satisfy the three conditions:
+\begin{equation}
+    Ce^{K'}e^{h'} = e^{2K+2h}+e^{-2K}
+\end{equation}
+\begin{equation}
+    Ce^{-K'} = e^{h}+e^{-h}
+\end{equation}
+\begin{equation}
+    Ce^{K'}e^{-h'} = e^{2K-2h}+e^{-2K}
+\end{equation}
+}
+\kafkasubsection{
+Show that the solutions of the previous can be written as
+\begin{equation}
+    e^{-2h'} = \frac{e^{2K-2h} + e^{-2K}}{e^{2K+2h}+e^{-2K}}
+\end{equation}
+\begin{equation}
+    e^{4K'} = \frac{e^{4K}+e^{-2h}+e^{2h}+e^{-4K}}{\ab(e^h+e^{-h})^2}
+\end{equation}
+\begin{equation}
+    C^4 = \ab[e^{4K}+e^{-2h}+e^{2h}+e^{-4K}]\ab[e^h+e^{-h}]^2
+\end{equation}
+}
+
+\kafkasubsection{
+Show that the recursion relations in the previous reduce to
+\begin{equation}
+    K' = R(K) = \frac{1}{2}\ln\ab[\cosh(2K)]
+\end{equation}
+for $h = 0$. For $h\neq 0$ start from some intial state, $K_0,h_0$ and calculate a typical renormalization group trajectory. To what phase (paramagnetic or ferromagnetic) does the fixed point correspond?
+}

@@ -1,0 +1,12 @@
+\contentsline {section}{Question 1}{1}{section.1}%
+\contentsline {section}{Question 1.a}{1}{equation.1.1}%
+\contentsline {section}{Question 1.b}{1}{equation.1.2}%
+\contentsline {section}{Question 2}{1}{section.2}%
+\contentsline {section}{Question 2.a}{1}{equation.2.1}%
+\contentsline {section}{Question 2.b}{2}{equation.2.4}%
+\contentsline {section}{Question 2.c}{2}{subsection.2.3}%
+\contentsline {section}{Question 2.d}{2}{equation.2.5}%
+\contentsline {section}{Question 3}{3}{equation.3.3}%
+\contentsline {section}{Question 3.a}{3}{equation.3.6}%
+\contentsline {section}{Question 3.b}{3}{equation.3.9}%
+\contentsline {section}{Question 3.c}{4}{equation.3.10}%
