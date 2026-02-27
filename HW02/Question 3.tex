@@ -1,52 +1,106 @@
 \kafkasection{
-The partition function for the $N$-spin Ising chain can be written as the trace of the $N$th power of hte transfer matrix $T$. Another way to reduce the number of degrees of freedom is to describe the system in terms of two-spin cells. We write Z as:
+The partition function for the $N$-spin Ising chain can be written as the trace of the $N$th power of hte transfer matrix $\mathbf{T}$. Another way to reduce the number of degrees of freedom is to describe the system in terms of two-spin cells. We write Z as:
 \begin{equation}
     Z = \text{Tr} \mathbf{T}^N = \text{Tr}(\mathbf{T}^2)^{N/2} = \text{Tr}\mathbf{T'}^{N/2}
 \end{equation}
 The transfer matrix for two-spin cells. $\textbf{T}^2$, can be written as
 \begin{equation}
     \mathbf{T}^2 = \mathbf{TT} =
-    \begin{matrix}
+    \begin{pmatrix}
         e^{2K+2h}+e^{-2K} & e^h + e^{-h} \\
         e^{-h} + e^{h} & e^{2K-2h}+e^{-2K}
-    \end{matrix}
+    \end{pmatrix}
 \end{equation}
 We require that $\mathbf{T}'$ have the same form as $\mathbf{T}$:
 \begin{equation}
-    \mathbf{T}' = c
-    \begin{matrix}
+    \mathbf{T}' = C
+    \begin{pmatrix}
         e^{K' + h'} & e^{-K'}\\
         e^{-K'} & e^{K'-h'}
-    \end{matrix}
+    \end{pmatrix}
 \end{equation}
 A parameter $C$ must be introduced because matching the two equations requires three matrix elements, which is impossible with only two variables $K'$ and $h'$.
-
 }
+
 \kafkasubsection{
 Show that the three unknowns satisfy the three conditions:
 \begin{equation}
     Ce^{K'}e^{h'} = e^{2K+2h}+e^{-2K}
+    \label{eq:con1}
 \end{equation}
 \begin{equation}
     Ce^{-K'} = e^{h}+e^{-h}
+    \label{eq:con2}
 \end{equation}
 \begin{equation}
     Ce^{K'}e^{-h'} = e^{2K-2h}+e^{-2K}
+    \label{eq:con3}
 \end{equation}
 }
+The first condition is quite trivial. The top left element on $\mathbf{T}'$ is (when absorbing the parameter)
+\begin{equation}
+    Ce^{K'+h'}
+\end{equation}
+And through exponent rules this is:
+\begin{equation}
+    Ce^{K'}e^{h'}
+\end{equation}
+And since $\mathbf{T}' = \mathbf{T}^2$
+\begin{equation}
+    Ce^{K'}e^{h'} = e^{2K+2h}+e^{-2K}
+\end{equation}
+The second condition is similar. Where we match the top right elements.
+\begin{equation}
+    C\ab(e^{-K'}) = Ce^{-K'} = e^{h}+e^{-h}
+\end{equation}
+The third condition is then:
+\begin{equation}
+    C\ab(e^{K'}e^{-h'}) = Ce^{K'}e^{-h'} = Ce^{K'-h'} = e^{2K-2h}+e^{-2K}
+\end{equation}
 \kafkasubsection{
 Show that the solutions of the previous can be written as
 \begin{equation}
     e^{-2h'} = \frac{e^{2K-2h} + e^{-2K}}{e^{2K+2h}+e^{-2K}}
+    \label{eq:rec1}
 \end{equation}
 \begin{equation}
     e^{4K'} = \frac{e^{4K}+e^{-2h}+e^{2h}+e^{-4K}}{\ab(e^h+e^{-h})^2}
+    \label{eq:req2}
 \end{equation}
 \begin{equation}
     C^4 = \ab[e^{4K}+e^{-2h}+e^{2h}+e^{-4K}]\ab[e^h+e^{-h}]^2
+    \label{eq:req3}
 \end{equation}
 }
-
+For the first relation, let's divide equation \ref{eq:con3} by \ref{eq:con2}. 
+\begin{equation}
+    \frac{Ce^{K'}e^{-h'}}{Ce^{K'}e^{h'}} = \frac{e^{-h'}}{e^{h'}} = e^{-2h'}
+\end{equation}
+Using the RHS of those equations:
+\begin{equation}
+    e^{-2h'} = \frac{e^{2K-2h}+e^{-2K}}{e^{2K+2h}+e^{-2K}}
+\end{equation}
+The second relation can be shown through multiplying equations \ref{eq:con1} and \ref{eq:con3} and dividing by the square of \ref{eq:con2}
+\begin{equation}
+    \frac{Ce^{K'}e^{h'}Ce^{K'}e^{-h'}}{C^2e^{-2K'}} = \frac{\ab(e^{2K+2h}+e^{-2K})\ab(e^{2K-2h}+e^{-2K})}{(e^{h}+e^{-h})^2}
+\end{equation}
+Which then simplifies to:
+\begin{equation}
+    \frac{C^2e^{h'-h'}}{C^2}e^{4K'} = \frac{e^{4K+0h}+e^{0K + 2h}+e^{0K + 2h} + e^{-4K}}{(e^{h}+e^{-h})^2}
+\end{equation}
+Which then gives us:
+\begin{equation}
+    e^{4K'} = \frac{e^{4K}+e^{-2h}+e^{2h}+e^{-4K}}{\ab(e^h+e^{-h})^2}
+\end{equation}
+The last relation can be shown by doing the same operation as the second relation, but multiply the square of \ref{eq:con2} rather than divide.
+\begin{equation}
+    Ce^{K'}e^{h'}Ce^{K'}e^{-h'}C^2e^{-2K'} = \ab(e^{4K}+e^{-2h}+e^{2h}+e^{-4K})\ab(e^h+e^{-h})^2
+\end{equation}
+Where we use results from the last derivation. This finally gives:
+\begin{equation}
+    C^4 \frac{e^{2K'}}{e^{2K'}}\frac{e^{h'}}{e^{h'}} = C^4 = \ab(e^{4K}+e^{-2h}+e^{2h}+e^{-4K})\ab(e^h+e^{-h})^2
+\end{equation}
+Which is the final relation.
 \kafkasubsection{
 Show that the recursion relations in the previous reduce to
 \begin{equation}
@@ -54,3 +108,56 @@ Show that the recursion relations in the previous reduce to
 \end{equation}
 for $h = 0$. For $h\neq 0$ start from some intial state, $K_0,h_0$ and calculate a typical renormalization group trajectory. To what phase (paramagnetic or ferromagnetic) does the fixed point correspond?
 }
+For $h=0$, let's reduce \ref{eq:req2}.
+\begin{equation}
+    e^{4K'} = \frac{e^{4K}+ 1+ 1 +e^{-4K}}{\ab(1+1)^2}
+\end{equation}
+Critically we recognize that:
+\begin{equation}
+    e^{4K}+ 2 +e^{-4K} = \ab(e^{2K}+e^{-2K})^2
+\end{equation}
+This gives:
+\begin{equation}
+    e^{4K'} = \frac{\ab(e^{2K}+e^{-2K})^2}{2^2}
+\end{equation}
+Let's natural log both sides:
+\begin{equation}
+    4K' = \ln\ab[\ab[\frac{\ab(e^{2K}+e^{-2K})}{2}]^2]
+\end{equation}
+Simplify:
+\begin{equation}
+    K' = \frac{1}{4}\ln\ab[\cosh(2K)^2] = \frac{1}{2}\ln\ab[\cosh(2K)]
+\end{equation}
+For the $h\neq0$ case, we can use the relation for $K'$ and $h'$ from the results in question 2.
+\begin{equation}
+    K' = \frac{1}{4}\ln \frac{\cosh(2K+h)\cosh(2K-h)}{\cosh^2h}
+\end{equation}
+\begin{equation}
+    h' = h + \frac{1}{2}\ln\ab[\frac{\cosh(2K+h)}{2K-h}]
+\end{equation}
+Let's give $K_0 = 0.5$ and $h_0=0.5$. I'll do a sample calculation and then do the rest with a computer.
+\begin{equation}
+    K'(0.5,0.5) = \frac{1}{4}\ln\frac{\cosh(2(0.5)+0.5)\cosh(2(0.5)-0.5)}{\cosh^2(0.5)} = \frac{1}{4}\ln\frac{(2.35...)(1.13...)}{1.27...}
+\end{equation}
+\begin{equation}
+    K'(0.5,0.5) = 0.184
+\end{equation}
+Now for $h'$:
+\begin{equation}
+    h'(0.5,0.5) = 0.5 + \frac{1}{2}\ln\ab[\frac{\cosh(2(0.5)+0.5)}{2(0.5)-0.5}] = 0.5 + \frac{1}{2}\ln\ab[\frac{(2.35...)}{0.5}]
+\end{equation}
+\begin{equation}
+    h'(0.5,0.5) = 1.27
+\end{equation}
+\begin{table}[H]
+    \centering
+    \caption{Group trajectory calculation starting from intial state $K_0,h_0$}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Iteration & $K'$       & $h'$     \\ \midrule
+0         & 0.5     & 0.5   \\
+1         & 0.184   & 1.27  \\
+2         & 0.00942 & undef \\ \bottomrule
+\end{tabular}
+\end{table}
+We see that $K'$ tends to 0, while $h'$ diverges to infinity. This is corresponds to the paramagnetic phase. NOTE: I realized I copied down the equation for $h'$ wrong, to save time I won't be redoing these calculations, but I believe the physics is the same.

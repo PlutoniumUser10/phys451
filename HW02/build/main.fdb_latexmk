@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1771879050.20653 "build/main.aux" "build/main.bbl" "build/main" 1771879350.70487 0
+["bibtex build/main"] 1771957909.25033 "build/main.aux" "build/main.bbl" "build/main" 1772070501.63683 0
   "./Refs.bib" 1770434628 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1771879350.40173 1403 8a3332071c1fb313c980049493c1efa3 "pdflatex"
+  "build/main.aux" 1772070500.7907 2777 7cb56d2075047a4deed7ba1455618224 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1771879348.66915 "/home/jaynardk/school/winter25/phys451/HW02/main.tex" "build/main.pdf" "main" 1771879350.70502 0
+["pdflatex"] 1772070496.1526 "/home/jaynardk/school/winter25/phys451/HW02/main.tex" "build/main.pdf" "main" 1772070501.63708 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jaynardk/school/winter25/phys451/HW02/main.tex" 1771878994.0353 1901 6ea31e195b7820b4c1885b9c7db3b1c8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -251,13 +251,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
   "Logo.png" 1770434628 52432 03ebcf495fd39aaf7d3320561be08453 ""
-  "Question 1.tex" 1771879348.47833 1014 2b522852a984356ce2f57bf0a6737376 ""
-  "Question 2.tex" 1771840194.28037 988 8cf04b2d58a743aa13576eb045609682 ""
-  "Question 3.tex" 1771879325.29812 2039 5f0705351c18538a56214d990e2d82c2 ""
-  "build/main.aux" 1771879350.40173 1403 8a3332071c1fb313c980049493c1efa3 "pdflatex"
-  "build/main.bbl" 1771879050.32203 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
-  "build/main.out" 1771879350.40173 1278 add3de5bb43db8039eb798102c25be68 "pdflatex"
-  "build/main.toc" 1771879350.40273 663 653adc32cd436239a6b1291ab931b99c "pdflatex"
+  "Question 1.tex" 1771884990.2999 1685 eef50dd37aafd021837c83c750e71c1d ""
+  "Question 2.tex" 1772070495.79673 4062 354a90d1f44d589a3edafbe539970ca2 ""
+  "Question 3.tex" 1771957929.23886 6201 9d107d1881e1b32fc86db3c9686218db ""
+  "build/main.aux" 1772070500.7907 2777 7cb56d2075047a4deed7ba1455618224 "pdflatex"
+  "build/main.bbl" 1771957909.36461 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
+  "build/main.out" 1772070500.7937 1281 eac4bb2b5ffdad566b90f6b7a35d3b46 "pdflatex"
+  "build/main.toc" 1772070500.7947 666 e32b059f6ff7b722dd39822988c50b50 "pdflatex"
   "main.tex" 1771878994.0353 1901 6ea31e195b7820b4c1885b9c7db3b1c8 ""
   "packages.tex" 1770434628 6106 9e824db24b25ce3b1de1a4bcc13226fc ""
   (generated)

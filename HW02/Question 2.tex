@@ -1,27 +1,113 @@
 \kafkasection{The recursion relations for nonzero magnetic field}
-\kafkasubsection{or nonzero magnetic field show that the function $A(K,h)$ satisfies the relation:
+\kafkasubsection{For nonzero magnetic field show that the function $A(K,h)$ satisfies the relation:
 \begin{equation}
     2e^{h(s_1 + s_3)/2}\cosh[K(s_1+s_3) + h] = A(K,h)e^{K's_1s_3+h'(s_1+s_3)/2}
 \end{equation}
 }
-\kafkasubsection{Show that the recursion relations for nonzero magnetic field are
+Let's do this by considering the combinations of spin states $s_1$ and $s_3$. Let's start with $s_1 = s_2 = +1$.
 \begin{equation}
-    K' \frac{1}{4}\ln \frac{\cosh(2K+h)\cosh(2K-h)}{\cosh^2h}
+    2e^{h2/2}\cosh[2K+h] = A(K,h)e^{1K'+h'2/2}
+\end{equation}
+This is then
+\begin{equation}
+    A(k,h)e^{K'+h'} = 2e^{h}\cosh[2K+h] = e^{2K +2h}+e^{-2K}
+    \label{eq:A1}
+\end{equation}
+Now let's go to the case where $s_1 = s_3 = -1$
+\begin{equation}
+    2e^{-h}\cosh[-2K+h] = A(K,h)e^{K'-h'}
 \end{equation}
 \begin{equation}
-    h' = h + \frac{1}{2}\ln\ab[\frac{\cosh(2K+h)}{2K-h}]
+    A(K,h)e^{K'-h'} = e^{-2K} + e^{2K-2h}
+    \label{eq:A2}
+\end{equation}
+Now for the case where the states are not equal
+\begin{equation}
+    2e^{0}\cosh[h] = A(K,h)e^{-K'+0}
+\end{equation}
+\begin{equation}
+    A(K,h)e^{-K'} = e^{h}+e^{-h}
+    \label{eq:A3}
+\end{equation}
+Wow these are all the relations we find in question 3.
+\kafkasubsection{Show that the recursion relations for nonzero magnetic field are
+\begin{equation}
+    K' = \frac{1}{4}\ln \frac{\cosh(2K+h)\cosh(2K-h)}{\cosh^2h}
+\end{equation}
+\begin{equation}
+    h' = h + \frac{1}{2}\ln\ab[\frac{\cosh(2K+h)}{\cosh(2K-h)}]
 \end{equation}
 and
 \begin{equation}
     \ln A(k,h) = \frac{1}{4}\ln\ab[16\cosh(2K+h)\cosh(2K-h)\cosh^2h]
 \end{equation}
 }
+Let's start by multiplying equation \ref{eq:A1} and \ref{eq:A2}, then divide by the square of \ref{eq:A3}.
+\begin{equation}
+    e^{4K'} = \frac{(e^{2K +2h}+e^{-2K})(e^{-2K} + e^{2K-2h})}{(e^{h}+e^{-h})^2}
+\end{equation}
+The product on the top:
+\begin{equation}
+    (e^{2K +2h}+e^{-2K})(e^{-2K} + e^{2K-2h}) = (2e^{h}\cosh[2K+h])(2e^{-h}\cosh[-2K+h]) = 4\cosh[2K+h]\cosh[-2K+h]
+\end{equation}
+We then get:
+\begin{equation}
+    e^{4K'} = \frac{4\cosh[2K+h]\cosh[-2K+h]}{4\cosh^2[h]}
+\end{equation}
+\begin{equation}
+    K' = \frac{1}{4}\ln\frac{\cosh[2K+h]\cosh[-2K+h]}{\cosh^2[h]}
+\end{equation}
+Now for the $h'$ identity. Let's divide \ref{eq:rec1} by \ref{eq:req2}.
+\begin{equation}
+    e^{2h'} = \frac{2e^{h}\cosh[2K+h]}{2e^{-h}\cosh[-2K+h]}
+\end{equation}
+\begin{equation}
+    e^{2h'} = e^{2h}\frac{\cosh[2K+h]}{\cosh[-2K+h]}
+\end{equation}
+Natural log both sides:
+\begin{equation}
+    2h' = 2h + \ln\frac{\cosh[2K+h]}{\cosh[-2K+h]}
+\end{equation}
+\begin{equation}
+    h' = h + \frac{1}{2}\ln\frac{\cosh[2K+h]}{\cosh[-2K+h]}
+\end{equation}
+Oh wow hyperbolic cosine is even.
+\begin{equation}
+    h' = h + \frac{1}{2}\ln\frac{\cosh[2K+h]}{\cosh[2K-h]}
+\end{equation}
+For the last equation, let's multiply \ref{eq:rec1} by \ref{eq:req2} and the square of \ref{eq:req3}.
+\begin{equation}
+    A(K,h)^4 e^0 = (2e^{h}\cosh[2K+h])(2e^{-h}\cosh[-2K+h])(4\cosh^2[h])
+\end{equation}
+\begin{equation}
+    A(K,h)^4 = 16\cosh[2K+h]\cosh[-2K+h]cosh^2[h]
+\end{equation}
+Natural log both sides:
+\begin{equation}
+    \ln A(K,h)= \frac{1}{4}\ln(16\cosh[2K+h]\cosh[-2K+h]cosh^2[h])
+\end{equation}
+This is what we want amen.
 \kafkasubsection{
 Show that the recursion relations have a line of trivial fixed points satisfying $K^*=0$ and arbitrary $h^*$, corresponding to the paramagnetic phase, and an unstable ferromagnetic fixed point at $K^* = \infty, h^*=0$.
 }
+For $K^* = 0 (K=0), h^*$,
+\begin{equation}
+    K' = \frac{1}{4}\ln\frac{\cosh(h)\cosh(-h)}{\cosh^2(h)} = \frac{1}{4}\ln\frac{\cosh^2(h)}{\cosh^2(h)} = \frac{1}{4}\ln(1) = 0
+\end{equation}
+let's do $h'$
+\begin{equation}
+    h' = h^* = h + \frac{1}{2}\ln\ab[\frac{\cosh(h)}{\cosh(h)}] = h + \frac{1}{2}\ln[1] = h
+\end{equation}
+Since this is linear, for $K^* = 0$, we have a line of trivial solutions.
 \kafkasubsection{
 Justify:
 \begin{equation}
-    Z(K,h,N)A(K,h)^{N/2}Z(K',h',N/2)
+    Z(K,h,N)=A(K,h)^{N/2}Z(K',h',N/2)
 \end{equation}
 }
+We have the familiar function for zero magnetic field.
+\begin{equation}
+    Z(K,N) = A(K)^{N/2}Z(K',N/2)
+\end{equation}
+Since we have it so that we have non-zero magnetic field, the extension is simply making $A$ a function of $h$ while also having the renormalized $Z$.
+
