@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex build/main"] 1773113923.79031 "build/main.aux" "build/main.bbl" "build/main" 1773113925.73712 0
+["bibtex build/main"] 1773202251.86514 "build/main.aux" "build/main.bbl" "build/main" 1773202254.70055 0
   "./Refs.bib" 1772760556 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1773113925.43045 729 de2711db048bca999fef3135ef49e099 "pdflatex"
+  "build/main.aux" 1773202254.42595 729 4df2439d4d48390b7de97835dedf8dae "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1773113923.93247 "/home/jaynardk/school/winter25/phys451/HW04/main.tex" "build/main.pdf" "main" 1773113925.73727 0
+["pdflatex"] 1773202252.17297 "/home/jaynardk/school/winter25/phys451/HW04/main.tex" "build/main.pdf" "main" 1773202254.7007 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jaynardk/school/winter25/phys451/HW04/main.tex" 1773113899.92875 1887 e4f7d211bc75e682a902dda7ebad0ad5 ""
+  "/home/jaynardk/school/winter25/phys451/HW04/main.tex" 1773117343.5436 1877 12a916f01850739c4174d1cbd1b115f5 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -37,6 +37,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -245,13 +246,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
   "Logo.png" 1772760556 52432 03ebcf495fd39aaf7d3320561be08453 ""
-  "Question 1.tex" 1773113899.92875 452 d79b54ca9b0a3c96e18033831d3d8699 ""
+  "Question 1.tex" 1773202246.59565 1345 692b5487c836362ae9329d48418db68d ""
   "Question 2.tex" 1773113914.69486 986 b3aeaecf5d5a992a0c4694a888f3ddee ""
-  "build/main.aux" 1773113925.43045 729 de2711db048bca999fef3135ef49e099 "pdflatex"
-  "build/main.bbl" 1773113923.92146 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
-  "build/main.out" 1773113925.43145 525 34f8882fa53fab2efadcb72580bf62e0 "pdflatex"
-  "build/main.toc" 1773113925.43145 276 37f61de550f1dcbd224d771d6c8e8b80 "pdflatex"
-  "main.tex" 1773113899.92875 1887 e4f7d211bc75e682a902dda7ebad0ad5 ""
+  "build/main.aux" 1773202254.42595 729 4df2439d4d48390b7de97835dedf8dae "pdflatex"
+  "build/main.bbl" 1773202252.15097 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
+  "build/main.out" 1773202254.42695 525 34f8882fa53fab2efadcb72580bf62e0 "pdflatex"
+  "build/main.toc" 1773202254.42861 276 0045fed829771f4da4a3730263bd16ce "pdflatex"
+  "main.tex" 1773117343.5436 1877 12a916f01850739c4174d1cbd1b115f5 ""
   "packages.tex" 1772760556 6106 9e824db24b25ce3b1de1a4bcc13226fc ""
   (generated)
   "build/main.aux"
