@@ -22,5 +22,80 @@ The total kinetic energy is then:
 \end{equation}
 For the potential energy, we have the spring displacement from equilibrium to depend on the positions of the object and it's neighbor. Because we have periodic boundaries, we can link the object to it's forward neighor in our sum notation.
 \begin{equation}
-    \delta 
+    \Delta x = x_{i+1} - x_i  = R(\theta_{i+1} - \theta_i)
 \end{equation}
+\begin{equation}
+    U = \frac{1}{2}k (\Delta x)^2
+\end{equation}
+So now we have:
+\begin{equation}
+    \Lagr = \frac{1}{2}mR^2 \sum_{1}^{4}\dot{\theta_i}^2 - \frac{1}{2}kR^2\sum_{1}^{4} (\theta_{i+1} - \theta_i)^2
+\end{equation}
+The equations of motion are then:
+\begin{equation}
+    \pdv{}{t}\pdv{\Lagr}{\dot{\theta_i}} = \pdv{\Lagr}{\theta_i}
+\end{equation}
+The RHS isn't super trivial,  but we can shorten down on the math by recognizing that we only need to include the terms that are the separation between $i$ and it's neighbors (since all others have a zero derivative)
+\begin{align}
+    \pdv{\Lagr}{\theta_i} &= -\frac{1}{2}kR^2 \sum_{1}^{4} \pdv{}{\theta_i}(\theta_{i+1} - \theta_i)^2 \\ 
+    &= -\frac{1}{2}kR^2 \pdv{}{\theta_i}\ab[(\theta_{i+1}-\theta_i)^2 + (\theta_i - \theta_{i-1})^2] \\
+    &= -\frac{1}{2}kR^2 \ab[-2(\theta_{i+1}-\theta_i) + 2(\theta_i - \theta_{i-1})]\\
+    &= kR^2 \ab[\theta_{i+1} - 2\theta_i + \theta_{i-1}]
+\end{align}
+The LHS in our equation of motion will trivially be:
+\begin{equation}
+    \pdv{}{t}\pdv{\Lagr}{\dot{\theta_i}} = \frac{1}{2}mR^2\pdv{}{t}\pdv{}{\dot{\theta_i}}\sum_{1}^{4}\dot{\theta_i}^2 = mR^2 \ddot{\theta_i}
+\end{equation}
+The equation of motion is then:
+\begin{equation}
+    mR^2\ddot{\theta_i} = kR^2 \ab[\theta_{i+1} - 2\theta_i + \theta_{i-1}]
+\end{equation}
+\begin{equation}
+    \ddot{\theta_i} = -\frac{k}{m}\ab[-\theta_{i+1} + 2\theta_i - \theta_{i-1}]
+\end{equation}
+With indexing of $i = 1,2,3,4$ we can represent $\theta$ as a whole with:
+\begin{equation}
+    \theta = \begin{bmatrix}
+        \theta_1 & \theta_2 & \theta_3 & \theta_4
+    \end{bmatrix}^T
+\end{equation}
+So now we have 
+\begin{equation}
+    \ddot{\theta} = -\frac{k}{m}C \theta
+\end{equation}
+Where $C$ is the circulant coupling matrix that is (in our context):
+\begin{equation}
+    C = \begin{bmatrix}
+        2 & -1 & 0 & -1 \\
+        -1 & 2 & -1 & 0 \\
+        0 & -1 & 2 & -1 \\
+        -1 & 0 & -1 & 2
+    \end{bmatrix}
+\end{equation}
+You can find the eigenvalues from the following:
+\begin{equation}
+    \det |C - \lambda I| = 0
+\end{equation}
+This is then:
+\begin{equation}
+    \det \begin{bmatrix}
+        2-\lambda & -1 & 0 & -1 \\
+        -1 & 2 - \lambda & -1 & 0 \\
+        0 & -1 & 2 -\lambda & -1 \\
+        -1 & 0 & -1 & 2 -\lambda
+    \end{bmatrix}
+    = \lambda(\lambda - 2)(\lambda^2-6\lambda+8) = 0    
+\end{equation}
+The zeroes (and thus the eigen values) are then:
+\begin{equation}
+    \lambda = 0, 2, 4, 2
+\end{equation}
+Since $C\theta = \lambda\theta$ our equation of motion is then:
+\begin{equation}
+    \ddot{\theta} = -\frac{k\lambda}{m}\theta
+\end{equation}
+This trivially yields the normal frequencies as:
+\begin{equation}
+    \omega = \sqrt{\frac{k\lambda}{m}} = 0, \sqrt{\frac{2k}{m}}, 2\sqrt{\frac{k}{m}}, \sqrt{\frac{2k}{m}}
+\end{equation}
+Since we have a ring of masses (initially separated equally), the first normal frequency corresponds to zero average displacement of the masses with relation to each other. This would appear as either the masses moving together at the same frequency or equivalently, zero motion. The two equivalent frequnecies correspond to the case where opposite masses along the ring (so masses who are not neighbors) are in opposite phases of each other. This means that when one is at a maximal displacement, the other is at zero displacement from equilibrium. The highest frequency is then when masses that are adjacent to each other are in opposite phases. 

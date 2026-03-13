@@ -1,13 +1,29 @@
 \kafkasection{Consider a diatomic molecule in one dimension. The Taylor expansion of the
 associated inter-atomic potential $V (r)$ around the equilibrium point shows that
 the second derivative is zero.}
+Denote the equilibrium point as $r_e$, since we consider a diatomic molecule, the potential should be symmetric about this equilibrium point.
+The taylor expansion is then:
+\begin{equation}
+    V(r_e+r) \approx V(r_e) + \frac{V'(r_e)(r_e + r)}{1!} + \frac{V''(r_e)(r_e+r)^2}{2!} + \frac{V'''(r_e)(r_e+r)^3}{3!}...
+\end{equation}
 \kafkasubsection{What can we say about the third (and, in fact, all odd) derivatives}
+Since we need this to be an even function (symmetric about $r_e$), there cannot be odd powers of $r$, so we have that the odd derivatives vanish in order to maintain this.
 \kafkasubsection{Assuming that the fourth derivative is the lowest derivative that is non-
 zero, what type of motion do you expect around the equilibrium point?
 Describe it quantitatively without doing any calculations. We constrain
 ourselves to such a potential (i.e., $V (r) \approx ar^4$) for the following question.}
+Around the equilibrium point, we simply see motion similar to that of simple harmonic motion (SMH), where there is a restoring force that points towards the equilibrium point. We see this as $r^4$ instead of the usual $r^2$, since the terms end up with $r^4$ dependence. This means that compared to regular SMH, the force around the extrema is significantly stronger.
 \kafkasubsection{Assuming we have a gas of N such non-interacting diatomic molecules
 coupled to a heat bath at temperature $T$ in equilibrium, what is its average
 energy? How does this compare to the case of a gas of non-interacting
 diatomic molecules with an inter-atomic potential $V (r) \approx \frac{k}{2} r^2$ and what
 are the implications for the equipartition theorem?}
+The equipartition theorem gives that the average energy for the non-interacting diatomic molecules (of this kind where the potential goes as $r^4$) at temp $T$ is simply:
+\begin{equation}
+    \braket{E} = \frac{1}{4}k_b T 
+\end{equation}
+Where the classic quadratic case gives:
+\begin{equation}
+    \braket{E} = \frac{1}{2}k_b T
+\end{equation}
+Here we see that the idea that the "$1/2 k_b T$" per degree of freedom is incomplete and that it depends mainly on the hamiltonian of the system (which is a more complete view).

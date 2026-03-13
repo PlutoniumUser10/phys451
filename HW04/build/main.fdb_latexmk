@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1773202251.86514 "build/main.aux" "build/main.bbl" "build/main" 1773202254.70055 0
+["bibtex build/main"] 1773387900.93247 "build/main.aux" "build/main.bbl" "build/main" 1773388299.10421 0
   "./Refs.bib" 1772760556 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1773202254.42595 729 4df2439d4d48390b7de97835dedf8dae "pdflatex"
+  "build/main.aux" 1773388298.2741 729 e64ca5179ce6d2dc0b6e827f198d4e3d "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1773202252.17297 "/home/jaynardk/school/winter25/phys451/HW04/main.tex" "build/main.pdf" "main" 1773202254.7007 0
+["pdflatex"] 1773388294.05065 "/home/jaynardk/school/winter25/phys451/HW04/main.tex" "build/main.pdf" "main" 1773388299.1046 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jaynardk/school/winter25/phys451/HW04/main.tex" 1773117343.5436 1877 12a916f01850739c4174d1cbd1b115f5 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -43,6 +43,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -246,12 +247,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
   "Logo.png" 1772760556 52432 03ebcf495fd39aaf7d3320561be08453 ""
-  "Question 1.tex" 1773202246.59565 1345 692b5487c836362ae9329d48418db68d ""
-  "Question 2.tex" 1773113914.69486 986 b3aeaecf5d5a992a0c4694a888f3ddee ""
-  "build/main.aux" 1773202254.42595 729 4df2439d4d48390b7de97835dedf8dae "pdflatex"
-  "build/main.bbl" 1773202252.15097 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
-  "build/main.out" 1773202254.42695 525 34f8882fa53fab2efadcb72580bf62e0 "pdflatex"
-  "build/main.toc" 1773202254.42861 276 0045fed829771f4da4a3730263bd16ce "pdflatex"
+  "Question 1.tex" 1773385334.98674 4850 1eda657a405235beab4f5ece0263cd31 ""
+  "Question 2.tex" 1773388293.77869 2376 fbd717f94eb2d78e13cdb3c702625cba ""
+  "build/main.aux" 1773388298.2741 729 e64ca5179ce6d2dc0b6e827f198d4e3d "pdflatex"
+  "build/main.bbl" 1773387901.22868 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
+  "build/main.out" 1773388298.2771 525 34f8882fa53fab2efadcb72580bf62e0 "pdflatex"
+  "build/main.toc" 1773388298.2781 276 b996dd93983735c84a5e4cf2b4019689 "pdflatex"
   "main.tex" 1773117343.5436 1877 12a916f01850739c4174d1cbd1b115f5 ""
   "packages.tex" 1772760556 6106 9e824db24b25ce3b1de1a4bcc13226fc ""
   (generated)
