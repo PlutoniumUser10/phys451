@@ -1,7 +1,68 @@
 \kafkasection{Shining an intense laser beam on a semiconductor can create a metastable col-
 lection of electrons (charge $-e$, and effective $m_e$) and holes (charge $+e$, and effective mass $m_h$) in the bulk. The oppositely charged particles may pair up (as in a hydrogen atom) to form a gas of \textit{excitons}, or they may dissociate into a plasma. We shall examine a much simpler model of this process}
-\kafkasubsection{Calculate the free energy of a gas composed of $N_e$ electrons and $N_h$ holes, at a temperature $T$, treating them classical non-interacting particles of masses $m_e$ and $m_h$}\
+\kafkasubsection{Calculate the free energy of a gas composed of $N_e$ electrons and $N_h$ holes, at a temperature $T$, treating them classical non-interacting particles of masses $m_e$ and $m_h$}
+The partition function for a given species with these restraints are:
+\begin{equation}
+    Z = \frac{1}{N!}\ab(\frac{V}{\lambda^3})^N
+\end{equation}
+Where $\lambda = \frac{h}{\sqrt{2\pi m k_B T}}$. We have then the free energy:
+\begin{equation}
+    F = -k_B T \ln(Z)
+\end{equation}
+Since we have two non interacting species, the total partition function is the product of the two (and thus the free energy is additive). Let's focus on the electrons.
+\begin{equation}
+    F = -k_B T(\ln(Z_e) + \ln(Z_h))
+\end{equation}
+Where:
+\begin{equation}
+    \ln(Z_e) = \ln\ab(\frac{1}{N_e!}\ab(V\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})^{N_e})
+\end{equation}
+Using stirling's and expanding:
+\begin{equation}
+    ln(Z_e) = N_e\ln\ab(V\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2}) - N_e\ln(N_e) +1 N_e
+\end{equation}
+Which gives:
+\begin{equation}
+    = N_e\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1
+\end{equation}
+Finally:
+\begin{equation}
+    F_e = -N_e k_B T\ab(\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1)
+\end{equation}
+This is symmetric for the holes, so we then have:
+\begin{equation}
+    F = F_e + F_h = -N_e k_B T\ab(\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1) - N_h k_B T\ab(\ln\ab(\frac{V}{N_h}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1)
+\end{equation}
 \kafkasubsection{By pairing into an exciton, the electron hole pair lowers its energy by $\epsilon$. (The binding energy of a hydrogen-like exciton is $\epsilon \approx me^4/(2\hbar^2\epsilon^2)$, where $\epsilon$ is the dielectric constant, and $m^{-1} = m_e^{-1} + m_h^{-1}$.)Calculate the free energy of a gas of $N_p$ excitons, treating them as classical non-interacting particles of mass $m=m_e+m_h$.}
+The slight modification comes in the form of:
+\begin{equation}
+    Z_p = \frac{1}{N_p!}\ab(\frac{V}{\lambda^3}e^{\epsilon \beta})^{N_p}
+\end{equation}
+Where the natural log is then:
+\begin{equation}
+    \ln(Z_p) = N_p\ln\ab(\frac{V}{\lambda^3}e^{\epsilon \beta}) - N_p\ln(N_p) + N_P
+\end{equation}
+This then becomes:
+\begin{equation}
+    \ln(Z_p) = N_p(\ln\ab(\ab\frac{V}{N_p\lambda^3})+ 1 + \epsilon\beta)
+\end{equation}
+And so the free energy:
+\begin{equation}
+    F_p = -N_pk_B T\ab(\ln\ab(\ab\frac{V}{N_p\lambda^3})+ 1 + \epsilon\beta)
+\end{equation}
+Where our $\lambda$ has the sum of the electron and hole mass, instead of a single mass.
 \kafkasubsection{Calculate the chemical potentials $\mu_e, \mu_h$, and $\mu_p$ of electron, hole, and exciton states, respectively.}
+The chemical potentials are just the following:
+\begin{equation}
+    \mu = \pdv{F}{N}
+\end{equation}
+So applying this to the electron:
+\begin{equation}
+    \mu_e = \pdv{F_e}{N_e}
+\end{equation}
+Ugh this is going to be gross.
+\begin{align}
+    \pdv{F_e}{N_e} &= -N_e k_B T\ab(\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1)
+\end{align}
 \kafkasubsection{Express the equilibrium condition between excitons and electron/holes in
 terms of their chemical potentials.}

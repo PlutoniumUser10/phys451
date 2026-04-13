@@ -5,4 +5,71 @@
 and $0 \leq \theta \ll 2\pi$.
 }
 \kafkasubsection{Find the eigenstates and energy levels of the system}
+Here we need to solve:
+\begin{equation}
+    H\psi = E\psi
+\end{equation}
+Where $\psi$ is the wavefunction and $E$ the energy. This gives us:
+\begin{equation}
+    -\frac{\hbar^2}{2I}\odv[order=2]{\psi}{\theta} = E\psi
+\end{equation}
+We then get a differential equation of the form:
+\begin{equation}
+    \odv[order=2]{\psi}{\theta} = -\frac{2EI}{\hbar^2}\psi
+\end{equation}
+We can then condense $2EI/\hbar^2 = m$. This differential equation has general solution:
+\begin{equation}
+    \psi = Ae^{im\theta} + Be^{-im\theta}
+\end{equation}
+To solve, we will take advantage of periodic boundary conditions where we need $\psi(\theta) = \psi(\theta + 2\pi)$. This gives us 
+\begin{equation}
+    Ae^{im\theta} + Be^{-im\theta} = Ae^{im(\theta+2\pi) }+ Be^{-im(\theta+2\pi)}
+\end{equation}
+We can then further solve:
+\begin{equation}
+    Ae^{im\theta} - Ae^{im(\theta+2\pi) + Be^{-im\theta} - Be^{-im(\theta+2\pi)}} = 0
+\end{equation}
+\begin{equation}
+    Ae^{im\theta}(1-e^{im2\pi}) + Be^{-im\theta}(1-e^{-im2\pi}) = 0
+\end{equation}
+Where we need both terms to equal zero to obtain a solution, let's zoom in on this $e^{im2\pi}$ term.
+\begin{equation}
+    e^{im2\pi} = \cos(m2\pi) + i\sin(m2\pi)
+\end{equation}
+To make this equal to 1, (so that the whole factor goes to zero) we must have $m$ be an integer so that the imaginary part goes to zero. Since $m$ takes on both positive and negative values, we can drop the $B$ term and have that:
+\begin{equation}
+    \psi = Ae^{im\theta}
+\end{equation}
+Now let's normalize to obtain $A$
+\begin{equation}
+    1 = A^2 \int_{0}^{2\pi}\abs{\psi\psi^*}^2 \d \theta = A^2 \int_{0}^{2\pi}\abs{\frac{e^{im\theta}}{e^{im\theta}}}^2 \d \theta = A^22\pi
+\end{equation}
+And so $A = 1/\sqrt{2\pi}$. We then get our eigenstates:
+\begin{equation}
+    \psi = \frac{1}{\sqrt{2\pi}}e^{im\theta}, m = 0, \pm 1, \pm 2,\pm3...
+\end{equation}
+Where our energies are then solved with the original equation:
+\begin{equation}
+    \odv[order=2]{\psi}{\theta} = -\frac{2EI}{\hbar^2}\psi
+\end{equation}
+\begin{equation}
+    -m^2\psi = -\frac{2EI}{\hbar^2}\psi
+\end{equation}
+\begin{equation}
+    E = \frac{\hbar^2m^2}{2I}
+\end{equation}
+Where these are also quantized as $m$ takes on integer values.
 \kafkasubsection{Write the expression for the density matrix $\braket{\theta'|\rho|\theta}$ in a canonical ensemble of temperature $T$, and evaluate its low- and high-temperature limits. Discuss your results.}
+We have:
+\begin{equation}
+    \braket{\theta'|\rho|\theta} = \frac{1}{2\pi Z}\sum_{m=-\infty}^{\infty}e^{-\beta \hbar^2 m^2/2I}e^{im(\theta' - \theta)}
+\end{equation}
+With the partition function being:
+\begin{equation}
+    Z = \sum_{m = -\infty}^{\infty}e^{-\beta \hbar^2m^2/2I}
+\end{equation}
+The low temperature limit ($T \rightarrow 0$) lets $\beta \rightarrow \infty$. This lets $Z = 1$ and a similar result for the top sum. So then:
+\begin{equation}
+    \braket{\theta'|\rho|\theta} = \frac{1}{2\pi}
+\end{equation}
+This flat result (no dependence on anything else) as well with what we generally know with systems of low energy is that this is the ground state. Now for the high temperature limit where ($T\rightarrow\infty, \beta\rightarrow 0$).

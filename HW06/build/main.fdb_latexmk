@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1775681006.33069 "build/main.aux" "build/main.bbl" "build/main" 1775681010.2051 0
+["bibtex build/main"] 1776057978.96449 "build/main.aux" "build/main.bbl" "build/main" 1776104073.44129 0
   "./Refs.bib" 1772760556 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1775681009.85552 1029 004b411f08f1b078a032668722b236ae "pdflatex"
+  "build/main.aux" 1776104072.65597 1029 598f90bd05b11da4acde609c3264199b "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1775681006.61342 "/home/jaynardk/school/winter25/phys451/HW06/main.tex" "build/main.pdf" "main" 1775681010.20525 0
+["pdflatex"] 1776104068.36389 "/home/jaynardk/school/winter25/phys451/HW06/main.tex" "build/main.pdf" "main" 1776104073.44167 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jaynardk/school/winter25/phys451/HW06/main.tex" 1775679872.74034 1877 d985040681cad8c65f1de3d25d304778 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -37,14 +37,19 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -247,12 +252,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
   "Logo.png" 1772760556 52432 03ebcf495fd39aaf7d3320561be08453 ""
-  "Question 1.tex" 1775681001.32964 471 b0fdb39cf3cd49aeb464aff01b5d7429 ""
-  "Question 2.tex" 1775681001.29464 1273 1ce05c2bbd112b585a79ac976ceacccf ""
-  "build/main.aux" 1775681009.85552 1029 004b411f08f1b078a032668722b236ae "pdflatex"
-  "build/main.bbl" 1775681006.59256 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
-  "build/main.out" 1775681009.85651 861 824b51e24997663d14a9e10ce2edeb20 "pdflatex"
-  "build/main.toc" 1775681009.85651 453 b16737d7056de0a5b62f7748017bc674 "pdflatex"
+  "Question 1.tex" 1776054475.74932 3434 7bfb82e04a6f2a9fa1d45e8699ead963 ""
+  "Question 2.tex" 1776104068.06324 3555 671272244ba47e8d549bc16052ef7784 ""
+  "build/main.aux" 1776104072.65597 1029 598f90bd05b11da4acde609c3264199b "pdflatex"
+  "build/main.bbl" 1776057979.26101 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
+  "build/main.out" 1776104072.65797 861 824b51e24997663d14a9e10ce2edeb20 "pdflatex"
+  "build/main.toc" 1776104072.65897 453 727d6d14ec2cb871024318a517bb8a61 "pdflatex"
   "main.tex" 1775679872.74034 1877 d985040681cad8c65f1de3d25d304778 ""
   "packages.tex" 1772760556 6106 9e824db24b25ce3b1de1a4bcc13226fc ""
   (generated)
