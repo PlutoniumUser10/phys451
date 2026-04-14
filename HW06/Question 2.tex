@@ -62,7 +62,27 @@ So applying this to the electron:
 \end{equation}
 Ugh this is going to be gross.
 \begin{align}
-    \pdv{F_e}{N_e} &= -N_e k_B T\ab(\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1)
+    \pdv{F_e}{N_e} &= -k_B T \pdv{}{N_e}N_e\ab(\ln\ab(\frac{V}{N_e}\ab(\frac{m_e k_B T}{2\pi h^2})^{3/2})+1)\\
+    &= -k_B T \pdv{}{N_e}\ab(N_e\ln\ab(\frac{V}{N_e}\ab(\frac{1}{\lambda_e^3}))+N_e)\\
+    &= -k_B T \pdv{}{N_e}\ab(N_e\ln\ab(V\ab(\frac{1}{\lambda_e^3})) - N_e\ln(N_e) + N_e)\\
+    &= -k_B T(\ln\ab(V\ab(\frac{1}{\lambda_e^3})) -\ln(N_e) - 1 + 1)\\
+    &= -k_B T\ln\ab(\frac{V}{N_e}\ab(\frac{1}{\lambda_e^3}))
+\end{align}
+Because the hole free energy have a similar shape to the electron free energy, we get an equivalent chemical potential.
+\begin{equation}
+    \mu_h = -k_B T\ln\ab(\frac{V}{N_h}\ab(\frac{1}{\lambda_h^3}))
+\end{equation}
+For $\mu_p$ we will derive it:
+\begin{align}
+    \mu_p &= \pdv{F_p}{N_p}\\
+    &= -\pdv{}{N_P}N_pk_B T\ab(\ln\ab(\ab\frac{V}{N_p\lambda^3})+ 1 + \epsilon\beta)\\
+    &= -k_B T \pdv{}{N_P} \ab(N_p\ab(\ln\ab(\ab\frac{V}{\lambda^3}) - \ln(N_p)+ 1 + \epsilon\beta))\\
+    &= -k_B T \pdv{}{N_P}\ab(N_p\ln\ab(\ab\frac{V}{\lambda^3}) - N_p\ln(N_p)+ N_p + N_p\epsilon\beta)\\
+    &= -k_B T \ab(\ln\ab(\ab\frac{V}{N_p\lambda^3})+\epsilon\beta)
 \end{align}
 \kafkasubsection{Express the equilibrium condition between excitons and electron/holes in
 terms of their chemical potentials.}
+We need the exchange of the electrons and holes to be equal to the exciton exchange. This means that:
+\begin{equation}
+    \mu_e + \mu_h = \mu_p
+\end{equation}

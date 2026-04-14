@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1776057978.96449 "build/main.aux" "build/main.bbl" "build/main" 1776104073.44129 0
+["bibtex build/main"] 1776134197.80795 "build/main.aux" "build/main.bbl" "build/main" 1776143275.59319 0
   "./Refs.bib" 1772760556 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1776104072.65597 1029 598f90bd05b11da4acde609c3264199b "pdflatex"
+  "build/main.aux" 1776143274.73681 1029 d92d672f502644bbe4b2bdaea0bbc432 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1776104068.36389 "/home/jaynardk/school/winter25/phys451/HW06/main.tex" "build/main.pdf" "main" 1776104073.44167 0
+["pdflatex"] 1776143270.42734 "/home/jaynardk/school/winter25/phys451/HW06/main.tex" "build/main.pdf" "main" 1776143275.59361 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jaynardk/school/winter25/phys451/HW06/main.tex" 1775679872.74034 1877 d985040681cad8c65f1de3d25d304778 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -253,11 +253,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
   "Logo.png" 1772760556 52432 03ebcf495fd39aaf7d3320561be08453 ""
   "Question 1.tex" 1776054475.74932 3434 7bfb82e04a6f2a9fa1d45e8699ead963 ""
-  "Question 2.tex" 1776104068.06324 3555 671272244ba47e8d549bc16052ef7784 ""
-  "build/main.aux" 1776104072.65597 1029 598f90bd05b11da4acde609c3264199b "pdflatex"
-  "build/main.bbl" 1776057979.26101 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
-  "build/main.out" 1776104072.65797 861 824b51e24997663d14a9e10ce2edeb20 "pdflatex"
-  "build/main.toc" 1776104072.65897 453 727d6d14ec2cb871024318a517bb8a61 "pdflatex"
+  "Question 2.tex" 1776143270.15898 4702 78e2cb14e76de2ac7a45b722ffe1e128 ""
+  "build/main.aux" 1776143274.73681 1029 d92d672f502644bbe4b2bdaea0bbc432 "pdflatex"
+  "build/main.bbl" 1776134198.12421 49 0eba253fc001332e731e8aba3f23127b "bibtex build/main"
+  "build/main.out" 1776143274.73981 861 824b51e24997663d14a9e10ce2edeb20 "pdflatex"
+  "build/main.toc" 1776143274.74082 453 705962158b9d55800fcf261ec2058c29 "pdflatex"
   "main.tex" 1775679872.74034 1877 d985040681cad8c65f1de3d25d304778 ""
   "packages.tex" 1772760556 6106 9e824db24b25ce3b1de1a4bcc13226fc ""
   (generated)

@@ -5,4 +5,4 @@
 \contentsline {section}{Question 2.a}{3}{subsection.2.1}%
 \contentsline {section}{Question 2.b}{3}{subsection.2.2}%
 \contentsline {section}{Question 2.c}{4}{subsection.2.3}%
-\contentsline {section}{Question 2.d}{4}{subsection.2.4}%
+\contentsline {section}{Question 2.d}{5}{subsection.2.4}%
