@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex build/main"] 1776834445.25669 "build/main.aux" "build/main.bbl" "build/main" 1776835849.53478 0
+["bibtex build/main"] 1776834445.25669 "build/main.aux" "build/main.bbl" "build/main" 1776839101.36345 0
   "./Refs.bib" 1772760556 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/aipnum4-2.bst" 1601932770 68586 d1f3a99a81bc39d512a69a183f4980c1 ""
-  "build/main.aux" 1776835849.05601 252 540a4255b372917116c4237f8684042d "pdflatex"
+  "build/main.aux" 1776839101.06168 252 540a4255b372917116c4237f8684042d "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1776835847.09406 "/home/jaynardk/school/winter25/phys451/Topic Paper/main.tex" "build/main.pdf" "main" 1776835849.5351 0
+["pdflatex"] 1776839099.74066 "/home/jaynardk/school/winter25/phys451/Topic Paper/main.tex" "build/main.pdf" "main" 1776839101.3636 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jaynardk/school/winter25/phys451/Topic Paper/main.tex" 1776835846.94524 1869 18512a99911ed1f22c19757903e0693d ""
+  "/home/jaynardk/school/winter25/phys451/Topic Paper/main.tex" 1776839099.4947 2046 59f94a79723b5c10613b55e2d3e4be47 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -196,13 +196,19 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
-  "C1.tex" 1776835727.2725 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "FermiGasIntro.tex" 1776838771.38274 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Introduction.tex" 1776838473.20448 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Limitations.tex" 1776838852.26903 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Logo.png" 1772760556 52432 03ebcf495fd39aaf7d3320561be08453 ""
-  "build/main.aux" 1776835849.05601 252 540a4255b372917116c4237f8684042d "pdflatex"
+  "MassRelationship.tex" 1776838825.39184 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "NeutronStarFormation.tex" 1776838536.50903 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "QuantumBackground.tex" 1776838483.01741 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "RelFermiGas.tex" 1776838782.60368 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "build/main.aux" 1776839101.06168 252 540a4255b372917116c4237f8684042d "pdflatex"
   "build/main.bbl" 1776834445.5657 1982 9d629e325d1ba44d1f47813953876fa6 "bibtex build/main"
-  "build/main.out" 1776835848.79053 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "build/main.toc" 1776835849.03078 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1776835846.94524 1869 18512a99911ed1f22c19757903e0693d ""
+  "build/main.out" 1776839100.90238 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/main.toc" 1776839101.04549 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1776839099.4947 2046 59f94a79723b5c10613b55e2d3e4be47 ""
   "packages.tex" 1776834299.90655 4512 6b50cf65b68c94a8ecfb2b2fe6c89353 ""
   (generated)
   "build/main.aux"
