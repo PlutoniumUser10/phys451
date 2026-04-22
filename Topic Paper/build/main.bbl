@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{0}%
+\begin{thebibliography}{2}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -49,4 +49,10 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Heger}\ \emph {et~al.}(2003)\citenamefont {Heger}, \citenamefont {Fryer}, \citenamefont {Woosley}, \citenamefont {Langer},\ and\ \citenamefont {Hartmann}}]{Heger2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Heger}}, \bibinfo {author} {\bibfnamefont {C.~L.}\ \bibnamefont {Fryer}}, \bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont {Woosley}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Langer}},\ and\ \bibinfo {author} {\bibfnamefont {D.~H.}\ \bibnamefont {Hartmann}},\ }\href {https://doi.org/10.1086/375341} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf {\bibinfo {volume} {591}},\ \bibinfo {pages} {288–300} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Baade}\ and\ \citenamefont {Zwicky}(1934)}]{Baade}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Baade}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Zwicky}},\ }\href {https://doi.org/10.1073/pnas.20.5.259} {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo {volume} {20}},\ \bibinfo {pages} {259} (\bibinfo {year} {1934})},\ \Eprint {https://arxiv.org/abs/https://www.pnas.org/doi/pdf/10.1073/pnas.20.5.259} {https://www.pnas.org/doi/pdf/10.1073/pnas.20.5.259} \BibitemShut {NoStop}%
 \end{thebibliography}%
