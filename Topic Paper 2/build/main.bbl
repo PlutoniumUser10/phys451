@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{2}%
+\begin{thebibliography}{11}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -49,10 +49,37 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Chandrasekhar}(1935)}]{Chandrasekhar1935}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chandrasekhar}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The highly collapsed configurations of a stellar mass. (second paper.)},}\ }\href {\doibase 10.1093/mnras/95.3.207} {\bibfield  {journal} {\bibinfo  {journal} {Monthly Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume} {95}},\ \bibinfo {pages} {207--225} (\bibinfo {year} {1935})},\ \Eprint {http://arxiv.org/abs/https://academic.oup.com/mnras/article-pdf/95/3/207/18326119/mnras95-0207.pdf} {https://academic.oup.com/mnras/article-pdf/95/3/207/18326119/mnras95-0207.pdf} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Heger}\ \emph {et~al.}(2003)\citenamefont {Heger}, \citenamefont {Fryer}, \citenamefont {Woosley}, \citenamefont {Langer},\ and\ \citenamefont {Hartmann}}]{Heger2003}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Heger}}, \bibinfo {author} {\bibfnamefont {C.~L.}\ \bibnamefont {Fryer}}, \bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont {Woosley}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Langer}}, \ and\ \bibinfo {author} {\bibfnamefont {D.~H.}\ \bibnamefont {Hartmann}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {How massive single stars end their life},}\ }\href {\doibase 10.1086/375341} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf {\bibinfo {volume} {591}},\ \bibinfo {pages} {288–300} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Baade}\ and\ \citenamefont {Zwicky}(1934)}]{Baade}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Baade}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Zwicky}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Cosmic rays from super-novae},}\ }\href {\doibase 10.1073/pnas.20.5.259} {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo {volume} {20}},\ \bibinfo {pages} {259--263} (\bibinfo {year} {1934})},\ \Eprint {http://arxiv.org/abs/https://www.pnas.org/doi/pdf/10.1073/pnas.20.5.259} {https://www.pnas.org/doi/pdf/10.1073/pnas.20.5.259} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Oppenheimer}\ and\ \citenamefont {Volkoff}(1939)}]{Oppy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Oppenheimer}}\ and\ \bibinfo {author} {\bibfnamefont {G.~M.}\ \bibnamefont {Volkoff}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {On massive neutron cores},}\ }\href {\doibase 10.1103/PhysRev.55.374} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {55}},\ \bibinfo {pages} {374--381} (\bibinfo {year} {1939})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giacconi}\ \emph {et~al.}(1962)\citenamefont {Giacconi}, \citenamefont {Gursky}, \citenamefont {Paolini},\ and\ \citenamefont {Rossi}}]{Giacconi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Giacconi}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Gursky}}, \bibinfo {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Paolini}}, \ and\ \bibinfo {author} {\bibfnamefont {B.~B.}\ \bibnamefont {Rossi}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Evidence for x rays from sources outside the solar system},}\ }\href {\doibase 10.1103/PhysRevLett.9.439} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {9}},\ \bibinfo {pages} {439--443} (\bibinfo {year} {1962})}\BibitemShut {NoStop}%
+\bibitem [{aps(2006)}]{apsnews_pulsars_2006}%
+  \BibitemOpen
+  \bibfield  {title} {\enquote {\bibinfo {title} {This month in physics history: February 1968: The discovery of pulsars announced},}\ }\href {https://www.aps.org/archives/publications/apsnews/200602/history.cfm} {\bibfield  {journal} {\bibinfo  {journal} {APS News}\ }\textbf {\bibinfo {volume} {15}} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hewish}\ \emph {et~al.}(1968)\citenamefont {Hewish}, \citenamefont {Bell}, \citenamefont {Pilkington}, \citenamefont {Scott},\ and\ \citenamefont {Collins}}]{Hewish1968}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Hewish}}, \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont {Bell}}, \bibinfo {author} {\bibfnamefont {J.~D.~H.}\ \bibnamefont {Pilkington}}, \bibinfo {author} {\bibfnamefont {P.~F.}\ \bibnamefont {Scott}}, \ and\ \bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Collins}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Observation of a rapidly pulsating radio source},}\ }\href {\doibase 10.1038/217709a0} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {217}},\ \bibinfo {pages} {709--713} (\bibinfo {year} {1968})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fienberg}(2018)}]{fienberg_bellburnell_2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Fienberg}},\ }\href {https://aas.org/posts/news/2018/09/jocelyn-bell-burnell-receives-special-breakthrough-prize-physics} {\enquote {\bibinfo {title} {Jocelyn {Bell} {Burnell} receives special breakthrough prize},}\ }\bibinfo {howpublished} {American Astronomical Society News} (\bibinfo {year} {2018}),\ \bibinfo {note} {accessed: \today}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Manchester}\ \emph {et~al.}(2005)\citenamefont {Manchester}, \citenamefont {Hobbs}, \citenamefont {Teoh},\ and\ \citenamefont {Hobbs}}]{manchester_atnf_2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~N.}\ \bibnamefont {Manchester}}, \bibinfo {author} {\bibfnamefont {G.~B.}\ \bibnamefont {Hobbs}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Teoh}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hobbs}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The {Australia} {Telescope} {National} {Facility} pulsar catalogue},}\ }\href {\doibase 10.1086/428488} {\bibfield  {journal} {\bibinfo  {journal} {The Astronomical Journal}\ }\textbf {\bibinfo {volume} {129}},\ \bibinfo {pages} {1993--2006} (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{NASA Jet Propulsion Laboratory}}()}]{nasa_pia14113_voyager}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{NASA Jet Propulsion Laboratory}}},\ }\href {https://www.jpl.nasa.gov/images/pia14113-voyagers-special-cargo-the-golden-record} {\enquote {\bibinfo {title} {Voyager's special cargo: The golden record},}\ }\bibinfo {howpublished} {Image PIA14113},\ \bibinfo {note} {accessed: \today}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shapiro}\ and\ \citenamefont {Teukolsky}(1983)}]{shapiro_teukolsky_1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont {Shapiro}}\ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Teukolsky}},\ }\href@noop {} {\emph {\bibinfo {title} {Black Holes, White Dwarfs, and Neutron Stars: The Physics of Compact Objects}}}\ (\bibinfo  {publisher} {Wiley-VCH},\ \bibinfo {address} {New York},\ \bibinfo {year} {1983})\BibitemShut {NoStop}%
 \end{thebibliography}%

@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex build/main"] 1776852753.91519 "build/main.aux" "build/main.bbl" "build/main" 1776854396.78964 0
-  "./Refs.bib" 1776852753.76735 2003 8bf6e887c617680ee101e97a86f949bb ""
+["bibtex build/main"] 1776923736.28415 "build/main.aux" "build/main.bbl" "build/main" 1776923740.10559 0
+  "./Refs.bib" 1776923336.48754 5745 a289b38d914a294c6f717bf57586c7bd ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex4-1/aipnum4-1.bst" 1602107945 71940 a50ebfb042bce391330bc2a8a8568e8d ""
-  "build/main.aux" 1776854395.76904 943 23c8444ee036c32bc4feda5a46a5a914 "pdflatex"
-  "build/mainNotes.bib" 1776854395.77204 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 "pdflatex"
+  "build/main.aux" 1776923739.38052 2548 f9fa4a1615dcf8af4d3bec1d9ef34b49 "pdflatex"
+  "build/mainNotes.bib" 1776923739.383 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1776854392.94567 "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" "build/main.pdf" "main" 1776854396.79021 0
+["pdflatex"] 1776923736.60206 "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" "build/main.pdf" "main" 1776923740.1059 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" 1776854392.66706 2007 5f9feee19dd6abc1f27fc899d753b7b6 ""
+  "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" 1776914589.13286 715 10a6b55daa38b209540fc655756ae355 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -42,6 +42,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -209,10 +210,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770359582 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770359677 3348573 56496a3ce62a63360b1e30014a30b9b7 ""
-  "build/main.aux" 1776854395.76904 943 23c8444ee036c32bc4feda5a46a5a914 "pdflatex"
-  "build/main.bbl" 1776852754.0987 3564 07cacd5b2991c1eaecb6defa76517dcc "bibtex build/main"
-  "build/main.out" 1776854395.77104 404 365d6e0fdbd1370f3111533ea48933f9 "pdflatex"
-  "main.tex" 1776854392.66706 2007 5f9feee19dd6abc1f27fc899d753b7b6 ""
+  "Introduction.tex" 1776923732.16038 4112 2bc05b6cf99177b4cfc2248b22c934cf ""
+  "NStarComp.tex" 1776914589.16497 423 bde539cd3e6d633bf97a276b5f2749bc ""
+  "QuantumFermiGas.tex" 1776923590.58537 965 76fd44f485b0140f8261645982062281 ""
+  "build/main.aux" 1776923739.38052 2548 f9fa4a1615dcf8af4d3bec1d9ef34b49 "pdflatex"
+  "build/main.bbl" 1776923736.58081 9285 9014d5b2bc185a9af15a333a8777a7ca "bibtex build/main"
+  "build/main.out" 1776923739.38252 1233 3151a64db9d1345118f1c5f6cb34fc78 "pdflatex"
+  "main.tex" 1776914589.13286 715 10a6b55daa38b209540fc655756ae355 ""
   "packages.tex" 1776851993.00067 2256 3ca692eab05106fd49d113ec4a6154cf ""
   (generated)
   "build/main.aux"
