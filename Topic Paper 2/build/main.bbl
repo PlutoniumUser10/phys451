@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{11}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -82,4 +82,49 @@
 \bibitem [{\citenamefont {Shapiro}\ and\ \citenamefont {Teukolsky}(1983)}]{shapiro_teukolsky_1983}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont {Shapiro}}\ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Teukolsky}},\ }\href@noop {} {\emph {\bibinfo {title} {Black Holes, White Dwarfs, and Neutron Stars: The Physics of Compact Objects}}}\ (\bibinfo  {publisher} {Wiley-VCH},\ \bibinfo {address} {New York},\ \bibinfo {year} {1983})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burrows}\ and\ \citenamefont {Vartanyan}(2021)}]{Burrows2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Burrows}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Vartanyan}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Core-collapse supernova explosion theory},}\ }\href {\doibase 10.1038/s41586-020-03059-w} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {589}},\ \bibinfo {pages} {29--39} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lattimer}\ and\ \citenamefont {Prakash}(2004)}]{LattimerPrakash2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Lattimer}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Prakash}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The physics of neutron stars},}\ }\href {\doibase 10.1126/science.1090720} {\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo {volume} {304}},\ \bibinfo {pages} {536--542} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chamel}\ and\ \citenamefont {Haensel}(2008)}]{Chamel008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Chamel}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Haensel}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Physics of neutron star crusts},}\ }\href {\doibase 10.12942/lrr-2008-10} {\bibfield  {journal} {\bibinfo  {journal} {Living Reviews in Relativity}\ }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages} {10} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chandrasekhar}(1939)}]{Chandrasekhar1939}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chandrasekhar}},\ }\href@noop {} {\emph {\bibinfo {title} {An Introduction to the Study of Stellar Structure}}}\ (\bibinfo  {publisher} {University of Chicago Press},\ \bibinfo {address} {Chicago},\ \bibinfo {year} {1939})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chandrasekhar}(1931)}]{Chandrasekhar1931}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chandrasekhar}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The maximum mass of ideal white dwarfs},}\ }\href {\doibase 10.1086/143324} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf {\bibinfo {volume} {74}},\ \bibinfo {pages} {81} (\bibinfo {year} {1931})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Misner}, \citenamefont {Thorne},\ and\ \citenamefont {Wheeler}(1973)}]{Misner1973}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont {Misner}}, \bibinfo {author} {\bibfnamefont {K.~S.}\ \bibnamefont {Thorne}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont {Wheeler}},\ }\href@noop {} {\emph {\bibinfo {title} {Gravitation}}}\ (\bibinfo  {publisher} {W. H. Freeman},\ \bibinfo {address} {San Francisco},\ \bibinfo {year} {1973})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tolman}(1939)}]{Tolman1939}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont {Tolman}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Static solutions of einstein's field equations for spheres of fluid},}\ }\href {\doibase 10.1103/PhysRev.55.364} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {55}},\ \bibinfo {pages} {364--373} (\bibinfo {year} {1939})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fonseca}\ \emph {et~al.}(2021)\citenamefont {Fonseca} \emph {et~al.}}]{Fonseca2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Fonseca}} \emph {et~al.},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Refined mass and geometric measurements of the high-mass {PSR} {J0740+6620}},}\ }\href {\doibase 10.3847/2041-8213/ac03b8} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal Letters}\ }\textbf {\bibinfo {volume} {915}},\ \bibinfo {pages} {L12} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Riley}\ \emph {et~al.}(2021)\citenamefont {Riley} \emph {et~al.}}]{Riley2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont {Riley}} \emph {et~al.},\ }\bibfield  {title} {\enquote {\bibinfo {title} {A {NICER} view of the massive pulsar {PSR} {J0740+6620} informing the fundamental equation of state},}\ }\href {\doibase 10.3847/2041-8213/ac0a81} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal Letters}\ }\textbf {\bibinfo {volume} {918}},\ \bibinfo {pages} {L27} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Riley}\ \emph {et~al.}(2019)\citenamefont {Riley} \emph {et~al.}}]{Riley2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont {Riley}} \emph {et~al.},\ }\bibfield  {title} {\enquote {\bibinfo {title} {A {NICER} view of {PSR} {J0030+0451}: Millisecond pulsar parameter estimation},}\ }\href {\doibase 10.3847/2041-8213/ab481c} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal Letters}\ }\textbf {\bibinfo {volume} {887}},\ \bibinfo {pages} {L21} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Choudhury}\ \emph {et~al.}(2024)\citenamefont {Choudhury} \emph {et~al.}}]{Choudhury2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Choudhury}} \emph {et~al.},\ }\bibfield  {title} {\enquote {\bibinfo {title} {A {NICER} view of the nearest and brightest millisecond pulsar: {PSR} {J0437-4715}},}\ }\href {\doibase 10.3847/2041-8213/ad5a6f} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal Letters}\ }\textbf {\bibinfo {volume} {971}},\ \bibinfo {pages} {L20} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Demorest}\ \emph {et~al.}(2010)\citenamefont {Demorest}, \citenamefont {Pennucci}, \citenamefont {Ransom}, \citenamefont {Roberts},\ and\ \citenamefont {Hessels}}]{Demorest2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont {Demorest}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Pennucci}}, \bibinfo {author} {\bibfnamefont {S.~M.}\ \bibnamefont {Ransom}}, \bibinfo {author} {\bibfnamefont {M.~S.~E.}\ \bibnamefont {Roberts}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~W.~T.}\ \bibnamefont {Hessels}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {A two-solar-mass neutron star measured using {Shapiro} delay},}\ }\href {\doibase 10.1038/nature09466} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {467}},\ \bibinfo {pages} {1081--1083} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lattimer}(2012)}]{Lattimer2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Lattimer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The nuclear equation of state and neutron star masses},}\ }\href {\doibase 10.1146/annurev-nucl-102711-095018} {\bibfield  {journal} {\bibinfo  {journal} {Annual Review of Nuclear and Particle Science}\ }\textbf {\bibinfo {volume} {62}},\ \bibinfo {pages} {485--515} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rosswog}\ and\ \citenamefont {Br{\"u}ggen}(2007)}]{rosswog_bruggen_2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Rosswog}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Br{\"u}ggen}},\ }\href {\doibase 10.1017/CBO9780511809015} {\emph {\bibinfo {title} {Introduction to High-Energy Astrophysics}}}\ (\bibinfo  {publisher} {Cambridge University Press},\ \bibinfo {address} {Cambridge},\ \bibinfo {year} {2007})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Isihara}(1971)}]{isihara_1971}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Isihara}},\ }\href@noop {} {\emph {\bibinfo {title} {Statistical Physics}}}\ (\bibinfo  {publisher} {Academic Press},\ \bibinfo {address} {New York},\ \bibinfo {year} {1971})\BibitemShut {NoStop}%
 \end{thebibliography}%

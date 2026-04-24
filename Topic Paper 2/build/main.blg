@@ -25,45 +25,45 @@ Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--empty author in apsnews_pulsars_2006
 Warning--empty year in nasa_pia14113_voyager
-You've used 13 entries,
+You've used 28 entries,
             5918 wiz_defined-function locations,
-            1706 strings with 17108 characters,
-and the built_in function-call counts, 11723 in all, are:
-= -- 788
-> -- 298
-< -- 79
-+ -- 100
-- -- 87
-* -- 1806
-:= -- 1211
-add.period$ -- 21
-call.type$ -- 13
-change.case$ -- 56
-chr.to.int$ -- 15
-cite$ -- 17
-duplicate$ -- 1105
-empty$ -- 824
-format.name$ -- 146
-if$ -- 2211
+            1830 strings with 19454 characters,
+and the built_in function-call counts, 25671 in all, are:
+= -- 1776
+> -- 652
+< -- 141
++ -- 230
+- -- 171
+* -- 3869
+:= -- 2753
+add.period$ -- 47
+call.type$ -- 28
+change.case$ -- 127
+chr.to.int$ -- 30
+cite$ -- 32
+duplicate$ -- 2422
+empty$ -- 1916
+format.name$ -- 318
+if$ -- 4901
 int.to.chr$ -- 1
-int.to.str$ -- 20
-missing$ -- 149
-newline$ -- 85
-num.names$ -- 30
-pop$ -- 455
+int.to.str$ -- 35
+missing$ -- 312
+newline$ -- 130
+num.names$ -- 75
+pop$ -- 961
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 129
 quote$ -- 0
-skip$ -- 381
+skip$ -- 855
 stack$ -- 0
-substring$ -- 341
-swap$ -- 1037
-text.length$ -- 26
+substring$ -- 736
+swap$ -- 2228
+text.length$ -- 51
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 159
+type$ -- 349
 warning$ -- 3
-while$ -- 45
+while$ -- 106
 width$ -- 0
-write$ -- 149
+write$ -- 276
 (There were 3 warnings)

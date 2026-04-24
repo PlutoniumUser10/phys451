@@ -1,0 +1,150 @@
+\section{Stellar Structure: Newtonian Hydrostatic Equilibrium}
+\label{sec:newtonian}
+
+The equation of state derived in Section~\ref{sec:fermi} relates the
+pressure of the neutron gas to its energy density, but it says nothing
+by itself about how the star is structured. To determine the density
+profile $\rho(r)$, pressure profile $P(r)$, and the relationship between
+total mass $M$ and radius $R$, a second condition is required: hydrostatic equilibrium. In this section that condition is formulated in the Newtonian framework, which provides physical transparency and a natural first pass at the mass-radius relationship before the full general relativistic treatment of Section~\ref{sec:tov}.
+
+\subsection{Hydrostatic Equilibrium}
+
+Consider a spherically symmetric star in static mechanical equilibrium.
+A thin shell of matter at radius $r$ with thickness $dr$ and density
+$\rho(r)$ is acted on by two forces: the pressure difference across the
+shell, which acts outward, and the gravitational attraction of all the
+mass $M(r)$ interior to $r$, which acts inward. Balancing these forces
+per unit area gives the condition of hydrostatic equilibrium,
+
+\begin{equation}
+    \frac{dP}{dr} = -\frac{G M(r) \rho(r)}{r^2},
+    \label{eq:hydrostatic}
+\end{equation}
+
+supplemented by the mass continuity equation,
+
+\begin{equation}
+    \frac{dM}{dr} = 4\pi r^2 \rho(r).
+    \label{eq:mass-continuity}
+\end{equation}
+
+Equations~\eqref{eq:hydrostatic} and~\eqref{eq:mass-continuity} together
+with the equation of state $P = P(\rho)$ from Section~\ref{sec:fermi}
+form a closed system of ordinary differential equations. Given a central
+density $\rho_c \equiv \rho(0)$ as the single free parameter, integrating
+outward from $r = 0$ with initial conditions $M(0) = 0$ and $P(0) =
+P(\rho_c)$ until $P(R) = 0$ defines the stellar surface and yields the
+total mass $M \equiv M(R)$ and radius $R$. Varying $\rho_c$ then traces
+out the full mass-radius relationship.
+
+\subsection{The Polytropic Equation of State and the Lane-Emden Equation}
+ 
+In the non-relativistic limit the equation of state takes the polytropic
+form $P = K\rho^\gamma$ with $\gamma = 5/3$, where the constant $K$
+follows from equation~\eqref{eq:eos-nr},
+%
+\begin{equation}
+    K = \frac{1}{20}\left(\frac{3}{\pi}\right)^{2/3}
+        \frac{h^2}{m_n^{8/3}}.
+    \label{eq:polytropic-K}
+\end{equation}
+%
+A polytrope with $\gamma = 5/3$ corresponds to polytropic index
+$\mathfrak{n} = 1/(\gamma - 1) = 3/2$. Applying the standard
+Lane-Emden substitution \cite{Chandrasekhar1939}, the hydrostatic
+equilibrium and mass continuity equations reduce to the Lane-Emden
+equation,
+%
+\begin{equation}
+    \frac{1}{\xi^2}\frac{d}{d\xi}
+    \left(\xi^2 \frac{d\theta}{d\xi}\right)
+    = -\theta^{\mathfrak{n}},
+    \label{eq:lane-emden}
+\end{equation}
+%
+with boundary conditions $\theta(0) = 1$ and $\theta'(0) = 0$, where
+$\xi$ is a dimensionless radial coordinate and $\theta$ is related to
+the density by $\rho = \rho_c\,\theta^{\mathfrak{n}}$. The stellar
+surface is located at the first zero $\xi_1$ of $\theta$. For
+$\mathfrak{n} = 3/2$ the equation has no closed-form solution but is
+straightforward to integrate numerically, yielding $\xi_1 \approx 3.654$
+and $|\theta'(\xi_1)| \approx 0.2033$ \cite{Chandrasekhar1939}.
+
+
+\subsection{The Mass-Radius Relation in the Non-Relativistic Limit}
+ 
+Eliminating the central density $\rho_c$ between the Lane--Emden
+expressions for the total mass and radius yields the mass-radius
+relation for the non-relativistic neutron Fermi gas,
+%
+\begin{equation}
+    R \propto M^{-1/3}.
+    \label{eq:mass-radius-nr}
+\end{equation}
+%
+This inverse relationship is physically significant: unlike ordinary
+stars, which expand as mass is added, a degenerate star shrinks
+as its mass increases. Adding mass raises the central density and hence
+the Fermi momentum and degeneracy pressure, but the increased gravity
+compresses the star to a smaller radius. Evaluating at $M = 1.4\,M_\odot$
+gives $R \sim 10$--$15$~km, consistent in order of magnitude with
+observed neutron star radii.
+
+
+\subsection{The Maximum Mass and the Breakdown of the
+            Non-Relativistic Treatment}
+
+
+The mass-radius relation~\eqref{eq:mass-radius-nr} has no upper bound on
+$M$ in the strict non-relativistic limit: the star simply becomes
+smaller and denser without limit. However, as the central density
+increases, $p_F / m_n c$ grows and the equation of state softens toward
+the ultra-relativistic limit $P \propto \rho^{4/3}$, corresponding to a
+polytropic index $\mathfrak{n} = 3$. The Lane--Emden equation for
+$\mathfrak{n} = 3$ has a qualitatively different character: the total
+mass,
+%
+\begin{equation}
+    M_{\mathrm{Ch}} = 4\pi \alpha^3 \rho_c
+                      \left(-\xi^2\theta'\right)_{\xi_1}
+                    \propto K^{3/2} G^{-3/2},
+    \label{eq:chandrasekhar-mass}
+\end{equation}
+%
+becomes independent of the central density $\rho_c$. This means
+that for a $\gamma = 4/3$ polytrope there is a unique mass for which
+equilibrium is possible, and no equilibrium exists above it regardless
+of how high the central density is driven. This is the
+\emph{Chandrasekhar mass limit}, originally derived for white dwarfs
+\cite{Chandrasekhar1931} but applicable here with the electron mass
+replaced by the neutron mass. Substituting the neutron Fermi gas
+constant $K$ from the ultra-relativistic equation of state
+\eqref{eq:eos-ur} gives a Chandrasekhar-type limit for neutron stars of
+%
+\begin{equation}
+    M_{\mathrm{Ch}}^{(n)} \approx 5.73\,
+    \left(\frac{\hbar c}{G}\right)^{3/2}
+    \frac{1}{m_n^2}
+    \approx 5.4\, M_\odot.
+    \label{eq:chandrasekhar-neutron}
+\end{equation}
+%
+This estimate is considerably larger than the actual maximum neutron star
+mass because it neglects two important effects that both act to reduce
+the maximum mass: the transition from Newtonian to general relativistic
+gravity, and the fact that the equation of state is not purely
+ultra-relativistic at the densities where the maximum mass is reached.
+Both effects are incorporated in the TOV treatment of
+Section~\ref{sec:tov}, which reduces the maximum mass to the
+Oppenheimer-Volkoff limit of $\approx 0.7\,M_\odot$.
+
+The Newtonian analysis therefore identifies the correct physical
+mechanism. The softening of the equation of state from $\gamma = 5/3$
+toward $\gamma = 4/3$ as relativistic effects become important, but
+overestimates the maximum mass by nearly an order of magnitude. Two
+approximations must be relaxed simultaneously to obtain a quantitatively
+reliable result: the non-relativistic equation of state must be replaced
+by the full relativistic form of equations~\eqref{eq:energy-density-rel}
+and~\eqref{eq:pressure-rel}, and Newtonian gravity must be replaced by
+the general relativistic equations of stellar structure. This is the task
+of Section~\ref{sec:tov}.

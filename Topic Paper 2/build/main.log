@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.5)  22 APR 2026 23:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.5)  23 APR 2026 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -68,9 +68,6 @@ Class revtex4-1 Info: RevTeX society AIP selected on input line 64.
 Class revtex4-1 Warning: No journal specified, using default cha.
 
 Using journal substyle cha.
-
-Class revtex4-1 Warning: No type size specified, using default 12.
-
 Class revtex4-1 Info: Reading file aps12pt4-1.rtx on input line 7621.
 (/usr/share/texlive/texmf-dist/tex/latex/revtex4-1/aps12pt4-1.rtx
 File: aps12pt4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for documentation)
@@ -609,6 +606,25 @@ Package: derivative 2024/02/08 v1.4 Nice and easy derivatives and differentials 
 \l__deriv_tmpb_int=\count350
 \l__deriv_seq_pos_int=\count351
 \l__deriv_sort_max_int=\count352
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen305
+\lightrulewidth=\dimen306
+\cmidrulewidth=\dimen307
+\belowrulesep=\dimen308
+\belowbottomsep=\dimen309
+\aboverulesep=\dimen310
+\abovetopsep=\dimen311
+\cmidrulesep=\dimen312
+\cmidrulekern=\dimen313
+\defaultaddspace=\dimen314
+\@cmidla=\count353
+\@cmidlb=\count354
+\@aboverulesep=\dimen315
+\@belowrulesep=\dimen316
+\@thisruleclass=\count355
+\@lastruleclass=\count356
+\@thisrulewidth=\dimen317
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -633,13 +649,13 @@ Package nameref Warning: The definition of \label has changed!
 (nameref)                Check your packages! 
 (nameref)                Replacing it with the kernel definition on input line 149.
 
-\c@section@level=\count353
+\c@section@level=\count357
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen305
-\Hy@linkcounter=\count354
-\Hy@pagecounter=\count355
+\@linkdim=\dimen318
+\Hy@linkcounter=\count358
+\Hy@pagecounter=\count359
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -647,12 +663,13 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count356
+\Hy@SavedSpaceFactor=\count360
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `breaklinks' set `true' on input line 4040.
 Package hyperref Info: Hyper figures OFF on input line 4157.
 Package hyperref Info: Link nesting OFF on input line 4162.
 Package hyperref Info: Hyper index ON on input line 4165.
@@ -661,17 +678,17 @@ Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
 LaTeX Info: Redefining \href on input line 4674.
-\c@Hy@tempcnt=\count357
+\c@Hy@tempcnt=\count361
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen306
+\XeTeXLinkMargin=\dimen319
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count358
-\Field@Width=\dimen307
-\Fld@charsize=\dimen308
+\Fld@menulength=\count362
+\Field@Width=\dimen320
+\Fld@charsize=\dimen321
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -683,9 +700,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count359
-\c@Item=\count360
-\c@Hfootnote=\count361
+\Hy@abspage=\count363
+\c@Item=\count364
+\c@Hfootnote=\count365
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -694,8 +711,8 @@ File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count362
-\c@bookmark@seq@number=\count363
+\Fld@listcount=\count366
+\c@bookmark@seq@number=\count367
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -710,12 +727,7 @@ Class revtex4-1 Info: cite was not loaded (OK!) on input line 7.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 7.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 7.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 7.
-
-
-LaTeX Warning: Unused global option(s):
-    [graphicx].
-
-(build/main.aux)
+ (build/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -742,16 +754,16 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 7.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen309
+\scratchcounter=\count368
+\scratchdimen=\dimen322
 \scratchbox=\box109
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count369
+\nofMParguments=\count370
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen310
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen323
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -784,7 +796,11 @@ File: uesvect.fd
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Introduction.tex [2]) (./QuantumFermiGas.tex) (./NStarComp.tex [3]) (build/main.bbl
+) (./Introduction.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]) (./QuantumFermiGas.tex [3] [4]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 111.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [5]) (./NStarComp.tex [6] [7]) (./Newtonian.tex [8] [9] [10]) (./GeneralRel.tex [11] [12]) (./MassRadius.tex [13] [14]) (./Limitations.tex [15]) (build/main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []\OT1/cmr/m/n/12 W. Baade and F. Zwicky, ``Cos-mic rays from super-novae,'' []Pro-
  []
@@ -794,37 +810,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 \OT1/cmr/m/n/12 ceed-ings of the Na-tional Academy of Sci-ences \OT1/cmr/bx/n/12 20\OT1/cmr/m/n/12 , 259--263 (1934)[],
  []
 
-[4]
-Overfull \hbox (132.18985pt too wide) in paragraph at lines 84--85
-[]\OT1/cmr/m/n/12 S. L. Shapiro and S. A. Teukol-sky, |   []
- []
-
-)
+[16] [17])
 
 Class revtex4-1 Warning: Command \draft is obsolete;
 Invoke option draft instead..
 
-[5] (build/main.aux)
+[18] (build/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3151A64DB9D1345118F1C5F6CB34FC78;1233.
+(rerunfilecheck)             Checksum: 946B284F1E564C43031E8D3E28C74962;7725.
  ) 
 Here is how much of TeX's memory you used:
- 32973 strings out of 473197
- 701237 string characters out of 5718606
- 1047845 words of memory out of 5000000
- 55717 multiletter control sequences out of 15000+600000
- 566192 words of font info for 67 fonts, out of 8000000 for 9000
+ 33273 strings out of 473197
+ 706051 string characters out of 5718606
+ 1053424 words of memory out of 5000000
+ 55917 multiletter control sequences out of 15000+600000
+ 568634 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 121i,7n,124p,3080b,1205s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/main.pdf (5 pages, 136164 bytes).
+ 121i,12n,124p,3288b,1241s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on build/main.pdf (18 pages, 277203 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

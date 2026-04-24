@@ -1,8 +1,155 @@
 \section{Neutron Star Composition and Formation}
-As predicted by Baade and Zwicky, neutron stars come from the core collapse of stars with sufficient mass. BLAH BLAH BLAH BLAH Fermi energy exceeding the mass difference
+\label{sec:composition}
+ 
+With the thermodynamic properties of the ideal Fermi gas established in
+Section~\ref{sec:fermi}, it is now possible to examine the physical
+conditions inside a neutron star and assess whether the free neutron
+Fermi gas is a justified model for the stellar interior. This section
+addresses three questions in turn: how neutron stars form, why their
+interiors are composed predominantly of neutrons, and why those neutrons
+constitute a highly degenerate Fermi gas to which the zero-temperature
+approximation applies.
+ 
+\subsection{Core-Collapse Supernovae and Neutron Star Formation}
+ 
+Neutron stars are the remnants of massive stars with main
+sequence masses $M \gtrsim 8\,M_\odot$ that end their lives in
+core-collapse supernovae \cite{Heger2003}. Over the course of stellar
+evolution, successive stages of nuclear burning build up an iron core,
+which is the endpoint of exothermic fusion. When the iron core grows
+beyond the effective Chandrasekhar mass of approximately $1.4\,M_\odot$,
+electron degeneracy pressure can no longer support it and the core
+collapses. Collapse halts when the core reaches nuclear saturation
+density $\rho_0 \approx 2.3 \times 10^{14}$~g~cm$^{-3}$, at which
+point the repulsive component of the nuclear force stiffens the equation
+of state and the core bounces, launching the supernova shock that
+disrupts the surrounding stellar envelope \cite{Burrows2021}. The
+remnant is a proto-neutron star that cools rapidly through neutrino
+emission, settling within seconds into a cold, degenerate object.
 
-As the blah blah blah
+ 
+\subsection{Neutronization and the Composition of the Interior}
+ 
+The composition of the neutron star interior is determined by the process
+of neutronization. In ordinary stellar matter, neutrons are unstable against beta
+decay $n \rightarrow p + e^- + \bar{\nu}_e$, with a free-neutron lifetime
+of approximately 15 minutes. However, at the extreme densities of the
+neutron star interior the reverse reaction,
+%
 \begin{equation}
-    e^- + p \rightarrow n + \nu_e
+    p + e^- \rightarrow n + \nu_e,
+    \label{eq:neutronization}
 \end{equation}
-Where the products are a neutron and a neutrino. This is how neutron star interiors become so electrically neutral.
+%
+becomes energetically favorable. This occurs when the electron chemical
+potential $\mu_e$ exceeds the neutron-proton mass difference,
+%
+\begin{equation}
+    \mu_e > (m_n - m_p)c^2 = \Delta m\, c^2 = 1.293~\text{MeV}.
+    \label{eq:neutronization-condition}
+\end{equation}
+%
+From equation~\eqref{eq:fermi-momentum} of Section~\ref{sec:fermi}, the
+electron Fermi momentum rises with electron number density as
+$p_{F,e} \propto n_e^{1/3}$, and the corresponding ultra-relativistic
+Fermi energy $E_{F,e} = p_{F,e}c$ therefore increases with density.
+The condition \eqref{eq:neutronization-condition} is satisfied once the
+density exceeds approximately $10^7$~g~cm$^{-3}$, well below the
+densities found throughout the bulk of a neutron star
+\cite{shapiro_teukolsky_1983}. The result is that electron capture drives the
+composition toward a neutron-dominated state: in beta equilibrium, the
+proton fraction satisfies $Y_p \lesssim 0.1$ throughout most of the
+interior, and to a good first approximation the stellar matter may be
+treated as a single-component gas of free neutrons. It is this
+approximation that justifies the single-species Fermi gas model of
+Section~\ref{sec:fermi}.
+ 
+% ------------------------------------------------------------
+\subsection{The Degeneracy Condition}
+% ------------------------------------------------------------
+ 
+The zero-temperature approximation adopted throughout Section~\ref{sec:fermi}
+requires $T \ll T_F$, where the Fermi temperature $T_F = E_F/k_{\mathrm{B}}$
+is set by the Fermi energy. Using equation~\eqref{eq:fermi-momentum},
+the non-relativistic Fermi energy of the neutron gas is
+%
+\begin{equation}
+    E_F = \frac{p_F^2}{2m_n}
+        = \frac{\hbar^2}{2m_n}
+          \left(3\pi^2 n\right)^{2/3},
+    \label{eq:fermi-energy}
+\end{equation}
+%
+where $n = \rho / m_n$ is the neutron number density. Evaluating at a
+representative interior density $\rho \sim 2\rho_0 \approx
+4.6 \times 10^{14}$~g~cm$^{-3}$ gives
+%
+\begin{equation}
+    E_F \sim 60~\text{MeV},
+    \label{eq:fermi-energy-numerical}
+\end{equation}
+%
+corresponding to a Fermi temperature
+%
+\begin{equation}
+    T_F = \frac{E_F}{k_{\mathrm{B}}} \sim 7 \times 10^{11}~\text{K}.
+    \label{eq:fermi-temperature}
+\end{equation}
+%
+The actual interior temperature of a neutron star older than a few
+minutes is $T \sim 10^8$--$10^9$~K, set by neutrino cooling following
+the proto-neutron star phase \cite{LattimerPrakash2004}. The ratio
+%
+\begin{equation}
+    \frac{T}{T_F} \sim 10^{-3}\text{--}10^{-2}
+    \label{eq:degeneracy-ratio}
+\end{equation}
+%
+is small enough that thermal corrections to the equation of state are
+negligible at the level of accuracy of the free Fermi gas model. The
+zero-temperature approximation is therefore self-consistently justified,
+and the step-function form of the Fermi-Dirac distribution used in
+deriving equations~\eqref{eq:number-density}-\eqref{eq:pressure-rel}
+is an excellent approximation.
+ 
+% ------------------------------------------------------------
+\subsection{The Relativistic Parameter and Its Implications}
+% ------------------------------------------------------------
+ 
+A further check concerns the degree of relativistic degeneracy. The
+relevant dimensionless parameter is the ratio of the Fermi momentum to
+the neutron rest momentum $m_n c$,
+%
+\begin{equation}
+    x_F \equiv \frac{p_F}{m_n c}
+             = \frac{\hbar}{m_n c}
+               \left(3\pi^2 n\right)^{1/3}.
+    \label{eq:relativistic-parameter}
+\end{equation}
+%
+Evaluating at $\rho \sim \rho_0$ gives $x_F \sim 0.35$, rising to
+$x_F \sim 0.7$ at $\rho \sim 2\rho_0$. Since $x_F$ is neither much
+less than nor much greater than unity, the neutrons occupy the
+\emph{intermediate relativistic regime}: neither the non-relativistic
+limit $P \propto \rho^{5/3}$ nor the ultra-relativistic limit
+$P \propto \rho^{4/3}$ is uniformly valid throughout the star. This
+confirms that the full relativistic equation of state,
+equations~\eqref{eq:energy-density-rel}--\eqref{eq:pressure-rel}, is
+necessary for a quantitative treatment, as employed by Oppenheimer and
+Volkoff \cite{Oppy}.
+ 
+\subsection{Internal Structure and the Domain of the Model}
+ 
+Neutron stars are not uniform objects: they possess a layered internal
+structure whose composition varies with depth \cite{Chamel008}. The
+outer crust consists of a lattice of neutron-rich nuclei in a
+relativistic electron gas, the inner crust contains free neutrons
+coexisting with nuclear clusters, and the inner core at densities above
+$\sim 2\rho_0$ may harbor exotic phases whose equation of state is
+poorly constrained. The free neutron Fermi gas is a reasonable
+approximation only in the outer core, spanning roughly
+$0.5\rho_0 \lesssim \rho \lesssim 2\rho_0$. This region constitutes the
+bulk of the stellar volume and contains most of the mass, so the model
+captures the dominant physics governing the global properties of the
+star even though it is not valid everywhere.
+

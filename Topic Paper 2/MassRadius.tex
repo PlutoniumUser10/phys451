@@ -1,0 +1,80 @@
+\section{The Mass--Radius Relationship}
+\label{sec:mass-radius}
+
+The TOV integration of Section~\ref{sec:tov}, carried out across a range
+of central energy densities $\varepsilon_c$ with the free neutron Fermi
+gas equation of state, produces a continuous curve in the mass-radius
+plane. This mass-radius ($M$--$R$) curve is the primary observable
+prediction of the model and the natural point at which theory meets
+observation.
+% ------------------------------------------------------------
+\subsection{Structure of the Mass--Radius Curve}
+% ------------------------------------------------------------
+
+The $M$--$R$ curve for the free neutron Fermi gas has a characteristic
+shape that reflects the interplay between the equation of state and
+gravity as the central density is varied. Beginning at low central
+densities, both $M$ and $R$ are small. As $\varepsilon_c$ increases, the
+mass rises steeply while the radius varies more slowly, broadly
+consistent with the Newtonian scaling $R \propto M^{-1/3}$ derived in
+Section~\ref{sec:newtonian}: the star becomes more massive and more
+compact simultaneously. The curve reaches a maximum mass at
+$M_{\mathrm{OV}} \approx 0.7\,M_\odot$, corresponding to a radius of
+$R \approx 9.6$~km and a central density $\varepsilon_c \approx
+5\times10^{15}$~g~cm$^{-3}$ \cite{Oppy}. Beyond this point,
+further increases in central density yield configurations of decreasing
+mass and decreasing radius: these are unstable to radial perturbations
+and would collapse to black holes if perturbed \cite{shapiro_teukolsky_1983}. Only
+the branch of the $M$--$R$ curve with $dM/d\varepsilon_c > 0$ corresponds
+to stable stellar configurations.
+
+The termination of the stable branch at $M_{\mathrm{OV}}$ is a direct
+consequence of the softening of the equation of state discussed in
+Section~\ref{sec:tov}: as the central density
+approaches and exceeds $\varepsilon_c^{\mathrm{max}}$, the neutrons
+become increasingly ultra-relativistic and the equation of state
+asymptotes toward $P \propto \varepsilon^{4/3}$, at which point the
+three general relativistic correction terms in the TOV equation
+collectively overwhelm the pressure support.
+
+
+\subsection{Comparison with Observed Neutron Stars}
+
+The free Fermi gas model can be assessed quantitatively by comparing its
+$M$--$R$ predictions against well-measured neutron stars. Table~\ref{tab:neutron-stars}
+lists a representative selection of neutron stars with precise mass
+and/or radius measurements drawn from pulsar timing and X-ray
+observations.
+
+\begin{table}[h]
+    \centering
+    \caption{Selected neutron stars with well-measured masses and radii,
+        compared to the Oppenheimer--Volkoff limit for the free
+        neutron Fermi gas. Radii are from NICER X-ray timing.}
+
+    \label{tab:neutron-stars}
+    \begin{tabular}{lccc}
+        \toprule
+        Object & Mass ($M_\odot$) & Radius (km) & Reference \\
+        \midrule
+        PSR J0740+6620$^\dagger$  & $2.08 \pm 0.07$ & $12.39^{+1.30}_{-0.98}$ & \cite{Fonseca2021, Riley2021} \\
+        PSR J0030+0451            & $1.34^{+0.15}_{-0.16}$ & $12.71^{+1.14}_{-1.19}$ & \cite{Riley2019} \\
+        PSR J0437-4715            & $1.418 \pm 0.037$ & $11.36^{+0.95}_{-0.63}$ & \cite{Choudhury2024} \\
+        PSR J1614-2230$^\dagger$  & $1.908 \pm 0.016$ & --- & \cite{Demorest2010} \\
+        \midrule
+        OV limit (free Fermi gas) & $\approx 0.70$ & $\approx 9.6$ & \cite{Oppy} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Several features of Table~\ref{tab:neutron-stars} are immediately
+striking. First, every observed neutron star has a mass that exceeds
+$M_{\mathrm{OV}} \approx 0.7\,M_\odot$, with the most massive known
+example (from this list), PSR~J0740+6620, reaching $2.08\,M_\odot$,nearly three times the OV limit. Second, the observed radii cluster around 11--13~km,
+systematically larger than the $\approx 9.6$~km radius at the OV
+maximum. Both discrepancies point in the same direction: the true
+equation of state is stiffer than the free Fermi gas prediction,
+meaning that at a given energy density the actual pressure exceeds what
+a non-interacting neutron gas would produce. The physical origin of this is the repulsive component of the nuclear force at
+supranuclear densities, which is absent from the free Fermi gas model
+by construction.\cite{Lattimer2012}

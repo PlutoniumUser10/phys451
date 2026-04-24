@@ -1,0 +1,133 @@
+\section{General Relativistic Stellar Structure and the TOV Equation}
+\label{sec:tov}
+
+The Newtonian analysis of Section~\ref{sec:newtonian} identified the
+correct physical mechanism underlying the neutron star maximum mass but
+overestimated it by nearly an order of magnitude. Two approximations must
+be relaxed to obtain a quantitatively reliable result: the equation of
+state must be taken in its full relativistic form, and the gravitational
+field must be treated within general relativity rather than Newtonian
+theory. The necessity of the latter is quantified by the compactness
+parameter,
+%
+\begin{equation}
+    \mathcal{C} \equiv \frac{GM}{Rc^2}
+                \sim \frac{G \cdot 1.4\,M_\odot}{(10~\text{km})\,c^2}
+                \sim 0.2,
+    \label{eq:compactness}
+\end{equation}
+%
+which measures the ratio of the Schwarzschild radius $r_s = 2GM/c^2$ to
+the stellar diameter. For the Sun $\mathcal{C} \sim 10^{-6}$, and
+Newtonian gravity is an excellent approximation. For a neutron star
+$\mathcal{C} \sim 0.2$, placing it firmly in the regime where
+general relativistic corrections are of order 20\% and cannot be
+neglected. This section derives the Tolman--Oppenheimer--Volkoff (TOV)
+equation, the general relativistic generalization of hydrostatic
+equilibrium, and uses it together with the equation of state of
+Section~\ref{sec:fermi} to determine the maximum stable neutron star mass.
+
+% ------------------------------------------------------------
+\subsection{The Schwarzschild Metric and Stellar Structure}
+% ------------------------------------------------------------
+
+For a static, spherically symmetric mass distribution the spacetime
+geometry is described by the Schwarzschild-like interior metric,
+%
+\begin{equation}
+    ds^2 = -e^{2\Phi(r)}c^2\,dt^2
+           + \left(1 - \frac{2Gm(r)}{rc^2}\right)^{-1}dr^2
+           + r^2\,d\Omega^2,
+    \label{eq:interior-metric}
+\end{equation}
+%
+where $\Phi(r)$ is the gravitational potential and $m(r)$ is the
+gravitational mass enclosed within radius $r$ \cite{Misner1973}. The
+mass function $m(r)$ satisfies the same continuity equation as in the
+Newtonian case,
+%
+\begin{equation}
+    \frac{dm}{dr} = 4\pi r^2 \varepsilon(r)/c^2,
+    \label{eq:mass-continuity-gr}
+\end{equation}
+%
+except that the source term is now the total energy density $\varepsilon$
+(including rest mass) rather than the rest mass density $\rho$ alone,
+reflecting the fact that in general relativity all forms of energy
+gravitate.
+
+\subsection{Derivation of the TOV Equation}
+ 
+The equation of hydrostatic equilibrium in general relativity is obtained
+from the covariant conservation of the stress-energy tensor,
+$\nabla_\mu T^{\mu\nu} = 0$, applied to a perfect fluid with energy
+density $\varepsilon$ and isotropic pressure $P$ \cite{Tolman1939,
+Oppy}. The $r$-component of this conservation law, evaluated
+using the metric \eqref{eq:interior-metric}, yields the
+Tolman--Oppenheimer--Volkoff equation,
+%
+\begin{equation}
+    \frac{dP}{dr} = -\frac{G}{r^2}
+    \left(\varepsilon + \frac{P}{c^2}\right)
+    \left(m(r) + \frac{4\pi r^3 P}{c^2}\right)
+    \left(1 - \frac{2Gm(r)}{rc^2}\right)^{-1},
+    \label{eq:tov}
+\end{equation}
+%
+which recovers the Newtonian equation~\eqref{eq:hydrostatic} in the
+limit $c \to \infty$. The TOV equation, the mass continuity
+equation~\eqref{eq:mass-continuity-gr}, and the equation of state
+$P = P(\varepsilon)$ from Section~\ref{sec:fermi} form a closed system
+of ordinary differential equations in the fully general relativistic
+setting.
+
+\subsection{Numerical Integration and Boundary Conditions}
+ 
+The TOV system is integrated numerically outward from $r = 0$ with
+boundary conditions $m(0) = 0$ and $P(0) = P(\varepsilon_c)$, where
+$\varepsilon_c$ is the chosen central energy density. Integration
+proceeds until $P(R) = 0$, which defines the stellar surface at radius
+$R$, and the total gravitational mass is $M = m(R)$. The equation of
+state is evaluated numerically from
+equations~\eqref{eq:energy-density-rel} and~\eqref{eq:pressure-rel},
+with the Fermi momentum $p_F$ as the parameter relating $\varepsilon$
+and $P$ implicitly through equation~\eqref{eq:number-density}.
+Repeating the integration for a sequence of central densities
+$\varepsilon_c$ traces out the full mass-radius curve.
+
+
+% ------------------------------------------------------------
+\subsection{The Oppenheimer--Volkoff Maximum Mass}
+% ------------------------------------------------------------
+
+The central result of the TOV integration with the free neutron Fermi
+gas equation of state is the existence of a maximum stable mass. As the
+central density increases, the mass $M(\varepsilon_c)$ rises to a
+maximum and then decreases; configurations on the decreasing branch are
+unstable to radial perturbations \cite{shapiro_teukolsky_1983}. The maximum mass
+obtained from this calculation is the Oppenheimer-Volkoff limit,
+%
+\begin{equation}
+    M_{\mathrm{OV}} \approx 0.7\, M_\odot,
+    \label{eq:ov-limit}
+\end{equation}
+%
+occurring at a central density $\varepsilon_c \approx 5 \times 10^{15}$~g~cm$^{-3}$
+and a corresponding radius $R \approx 9.6$~km \cite{Oppy}.
+This is the neutron star analog of the Chandrasekhar limit for white
+dwarfs, and it marks the boundary between stable neutron stars and
+objects that must collapse further --- in the absence of additional
+pressure support --- to black holes.
+
+Comparing equations~\eqref{eq:chandrasekhar-neutron} and
+\eqref{eq:ov-limit}, the inclusion of general relativity reduces the
+maximum mass from the Newtonian estimate of $\sim 5.4\,M_\odot$ to
+$0.7\,M_\odot$, a reduction by nearly an order of magnitude. This
+dramatic difference reflects the cumulative effect of the three GR
+correction terms identified in Section~5.3: each individually increases
+the effective gravitational pull, and together they render the star
+unstable at a far lower mass than Newtonian gravity would predict. The
+physical content of the OV limit is therefore not just a quantitative
+correction to the Chandrasekhar result but a qualitatively different
+regime in which spacetime curvature plays a central role in determining
+stellar stability.

@@ -1,9 +1,169 @@
 \section{Quantum Fermi Gas}
-Before we discuss neutron stars as fermi gas, we must discuss fermi gas. The formalism developed in this section serves two purposes: it provides the equation of state relating pressure to energy density in the neutron star interior, and it gives us the tools needed to assess whether the zero-temperature (cold gas) approximation is justified at the densities found within these objects.
+\label{sec:fermi}
+Before we discuss neutron stars as Fermi gas, we must discuss Fermi gas. The formalism developed in this section serves two purposes: it provides the equation of state relating pressure to energy density in the neutron star interior, and it gives us the tools needed to assess whether the zero-temperature (cold gas) approximation is justified at the densities found within these objects.
 
-We will pick up where Oppenheimer and Volkoff started and consider a pure neutron gas. because neutrons are fermions (spin-$\frac{1}{2}$), they obey fermi-statistics. That is to say that their distribution function is Fermi-Dirac:
+\subsection{Fermi--Dirac Statistics and the Density of States}
+ 
+Neutrons are spin-$\tfrac{1}{2}$ fermions, subject to the Pauli
+exclusion principle: no two neutrons may occupy the same quantum state
+simultaneously. In thermal and chemical equilibrium, the mean occupation
+number of a single-particle state with energy $\epsilon$ is given by the
+Fermi--Dirac distribution,
+%
 \begin{equation}
-    \label{eq:distfunc}
-    f(E) = \frac{1}{\exp[\beta(E-\mu)]+1}
+    f(\epsilon) = \frac{1}{\exp\!\left[(\epsilon - \mu)/k_{\mathrm{B}}T\right] + 1},
+    \label{eq:fermi-dirac}
 \end{equation}
-Where $\beta = 1/\kappa_B T$, $\kappa_B$ the boltzmann constant and $T$ the temperature, $E$ is the energy of a given state, and $\mu$ is the chemical potential, given that we have some fixed $N$ number of particles. 
+%
+where $\mu$ is the chemical potential, $k_{\mathrm{B}}$ is Boltzmann's
+constant, and $T$ is the temperature. For a gas of $N$ neutrons in a
+volume $V$, counting momentum states with periodic boundary conditions
+and accounting for the two spin projections ($m_s = \pm\tfrac{1}{2}$),
+the number of states in the momentum interval $[p,\, p + dp]$ is
+%
+\begin{equation}
+    g(p)\,dp = \frac{8\pi V}{h^3}\,p^2\,dp,
+    \label{eq:dos}
+\end{equation}
+%
+where $h$ is Planck's constant. This density of states is the
+fundamental object from which all thermodynamic quantities of the ideal
+Fermi gas are derived.
+
+ 
+
+\subsection{The Zero-Temperature Limit and the Fermi Energy}
+
+ 
+At zero temperature the Fermi-Dirac distribution \eqref{eq:fermi-dirac}
+reduces to a step function: all states with $\epsilon < \mu(T=0) \equiv
+E_F$ are occupied, and all states above $E_F$ are empty. The quantity
+$E_F$ is the Fermi energy, and the corresponding momentum
+$p_F = \sqrt{2m_n E_F}$ (non-relativistically) is the Fermi
+momentum. Applying the number constraint where $N = \sum_{k}f(\epsilon)$
+at $T = 0$ using \eqref{eq:dos} gives $p_F$ in terms of $n$.
+
+\begin{equation}
+    n \equiv \frac{N}{V}
+      = \frac{8\pi}{h^3}\int_0^{p_F} p^2\,dp
+      = \frac{8\pi}{3h^3}\,p_F^3,
+    \label{eq:number-density}
+\end{equation}
+\begin{equation}
+    p_F = \left(\frac{3h^3 n}{8\pi}\right)^{1/3}.
+    \label{eq:fermi-momentum}
+\end{equation}
+
+The corresponding Fermi temperature $T_F \equiv E_F / k_{\mathrm{B}}$
+sets the scale below which quantum effects dominate. When $T \ll T_F$
+the thermal smearing of the Fermi--Dirac distribution over an energy
+range ${\sim}k_{\mathrm{B}}T$ near $E_F$ is negligible, and the
+zero-temperature approximation is excellent. We will check if this approximation is appropriate when talking about Neutron Star formulation.
+ 
+\subsection{Degeneracy Pressure}
+ 
+The Pauli exclusion principle forces neutrons to occupy states of
+progressively higher momentum as the density increases, contributing
+kinetic energy and hence pressure even at zero temperature and in the
+absence of inter-particle interactions. degeneracy pressure
+is what supports a neutron star against gravitational collapse.
+ 
+The total kinetic energy of the gas at zero temperature is
+%
+\begin{equation}
+    E_{\mathrm{kin}}
+      = \frac{8\pi V}{h^3}\int_0^{p_F} \mathcal{E}(p)\,p^2\,dp,
+    \label{eq:total-energy}
+\end{equation}
+%
+where $\mathcal{E}(p)$ is the single-particle energy. The pressure
+follows from the thermodynamic relation $P = -(\partial E_{\mathrm{kin}}/\partial V)_N$,
+yielding
+%
+\begin{equation}
+    P = \frac{8\pi c}{3h^3}\int_0^{p_F}
+        \frac{p^4\,dp}{\mathcal{E}(p)/c}.
+    \label{eq:pressure-general}
+\end{equation}
+%
+The specific form of $\mathcal{E}(p)$ determines which regime the gas
+occupies.
+
+ 
+% ------------------------------------------------------------
+\subsection{The Non-Relativistic Limit}
+% ------------------------------------------------------------
+ 
+When $p_F \ll m_n c$, the rest mass energy dominates and the
+single-particle energy is $\mathcal{E}(p) \approx m_n c^2 + p^2/2m_n$.
+Evaluating \ref{eq:pressure-general} in this limit gives
+%
+\begin{equation}
+    P_{non-rel}
+      = \frac{1}{20}\left(\frac{3}{\pi}\right)^{2/3}
+        \frac{h^2}{m_n}\,n^{5/3}
+      \propto \rho^{5/3},
+    \label{eq:eos-nr}
+\end{equation}
+%
+where $\rho = m_n n$ is the mass density. This is a \emph{polytropic}
+equation of state with index $\gamma = 5/3$, or equivalently polytropic
+index $\mathfrak{n} = 3/2$ in the Lane--Emden formalism that will be
+employed in Section~\ref{sec:newtonian}.
+ 
+% ------------------------------------------------------------
+\subsection{The Ultra-Relativistic Limit}
+% ------------------------------------------------------------
+ 
+When $p_F \gg m_n c$, the rest mass is negligible and the single-particle
+energy approaches $\mathcal{E}(p) \approx pc$. Evaluating
+\eqref{eq:pressure-general} in this limit gives
+%
+\begin{equation}
+    P_{rel}
+      = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n^{4/3}
+      \propto \rho^{4/3}.
+    \label{eq:eos-ur}
+\end{equation}
+%
+The softening of the equation of state from $\gamma = 5/3$ to
+$\gamma = 4/3$ has profound consequences for stellar stability. A
+polytrope with $\gamma > 4/3$ can always find a new equilibrium if
+slightly compressed, since the pressure rises faster than gravity.
+When $\gamma = 4/3$ exactly, the star is marginally stable: no
+equilibrium exists above a critical mass, regardless of how much the
+central density increases. This is the physical origin of the maximum
+mass for compact stars, and it is the argument that underlies the
+Chandrasekhar limit for white dwarfs and, as shown in
+Section~\ref{sec:newtonian}, a corresponding limit for neutron stars.
+ 
+% ------------------------------------------------------------
+\subsection{The Full Relativistic Equation of State}
+% ------------------------------------------------------------
+ 
+For neutron star interior conditions the Fermi momentum is
+neither much less nor much greater than $m_n c$, so the full
+relativistic dispersion relation $\mathcal{E}(p) = c\sqrt{p^2 + m_n^2 c^2}$
+must be used. The energy density and pressure are then
+
+\begin{equation}
+    \varepsilon
+      = \frac{8\pi c}{h^3}
+        \int_0^{p_F} \sqrt{p^2 + m_n^2 c^2}\; p^2\,dp,
+    \label{eq:energy-density-rel}
+\end{equation}
+
+\begin{equation}
+    P = \frac{8\pi c}{3h^3}
+        \int_0^{p_F}
+        \frac{p^4\,dp}{\sqrt{p^2 + m_n^2 c^2}}.
+    \label{eq:pressure-rel}
+\end{equation}
+
+These integrals interpolate smoothly between the non-relativistic result
+\eqref{eq:eos-nr} and the ultra-relativistic result \eqref{eq:eos-ur} as
+$p_F / m_n c$ increases from $0$ to $\infty$, and they constitute the
+equation of state that Oppenheimer and Volkoff used in their original
+calculation \cite{Oppy}. Closed-form expressions in terms of
+standard functions exist \cite{Chandrasekhar1935} but the integrals are
+straightforward to evaluate numerically.

@@ -1,30 +1,24 @@
-\documentclass[aip,graphicx]{revtex4-1}
+\documentclass[aip,preprint]{revtex4-1}
 
-\draft % marks overfull lines with a black rule on the right
+\draft
 
 \input{packages.tex}
 
 \begin{document}
 
-\title{Neutron Stars as Fermi Gas} %Title of paper
+\title{Neutron Stars as Fermi Gas}
 
 \author{Jaynard Kigas (30173694)}
 \affiliation{University of Calgary}
 
-\maketitle %\maketitle must follow title, authors, abstract and \pacs
-
-% Body of paper goes here. Use proper sectioning commands. 
-% References should be done using the \cite, \ref, and \label commands
+\maketitle 
 \input{Introduction.tex}
 \input{QuantumFermiGas.tex}
 \input{NStarComp.tex}
+\input{Newtonian.tex}
+\input{GeneralRel.tex}
+\input{MassRadius.tex}
+\input{Limitations.tex}
 
-\section{Relativistic Equations}
-
-\section{Limitations}
-
-\section{Concluding Thoughts}
-
-% Create the reference section using BibTeX:
 \bibliography{Refs.bib}
 \end{document}

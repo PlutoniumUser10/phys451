@@ -8,7 +8,7 @@
 %\usepackage{txfonts} % defines times new roman as default text font and provides supporting math symbols
 \usepackage{braket} % allows the use of detailed Dirac braket notation
 \usepackage{cancel} % used to cancel terms (with X or diagonal line) while writing math (useful for assignments)
-\usepackage{ulem} % underlines, typewriter font (for comp sci somewhat), and striking out (required for cancel package)
+\usepackage[normalem]{ulem} % underlines, typewriter font (for comp sci somewhat), and striking out (required for cancel package)
 \usepackage{empheq} %Extension of amsmath for boxing equations or answers
 
 %Jaynard's packages
@@ -28,8 +28,9 @@
 \DeclareMathOperator{\Lagr}{\mathcal{L}} %Lagrangian
 \DeclareMathOperator{\Haml}{\mathcal{H}} %Hamiltonian
 \newcommand{\evalat}{\biggr\rvert}%evaluate at for integration or partials
+\usepackage{booktabs}
 
-\usepackage{hyperref}
+\usepackage[breaklinks]{hyperref}
 
 %Abs w/o 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
