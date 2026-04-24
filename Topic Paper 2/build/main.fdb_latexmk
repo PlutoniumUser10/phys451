@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex build/main"] 1777007582.29114 "build/main.aux" "build/main.bbl" "build/main" 1777007829.92162 0
+["bibtex build/main"] 1777007905.49344 "build/main.aux" "build/main.bbl" "build/main" 1777007908.6798 0
   "./Refs.bib" 1777007375.85386 13818 a5b4f985b99c8e3f6fc129a210ba7fd9 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex4-1/aipnum4-1.bst" 1602107945 71940 a50ebfb042bce391330bc2a8a8568e8d ""
-  "build/main.aux" 1777007828.94587 9944 ea7f8c462f0bc06727e7f576080d86f2 "pdflatex"
-  "build/mainNotes.bib" 1777007828.9505 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 "pdflatex"
+  "build/main.aux" 1777007908.22847 9944 b6bf9b18e9bfafa5a2133275b128a0ce "pdflatex"
+  "build/mainNotes.bib" 1777007908.23045 69 7fe5a2a5b0ca4322ba6c6ddff14c7fd3 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1777007825.38835 "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" "build/main.pdf" "main" 1777007829.9221 0
+["pdflatex"] 1777007905.81356 "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" "build/main.pdf" "main" 1777007908.68001 0
   "/etc/texmf/web2c/texmf.cnf" 1770359564.85098 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jaynardk/school/winter25/phys451/Topic Paper 2/main.tex" 1776996355.70785 414 da2aa1319506fcd87a3c3e83e0f525c3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -229,10 +229,10 @@
   "MassRadius.tex" 1777005688.54008 4330 93056277a36824ad011da8dc27d35d91 ""
   "NStarComp.tex" 1777007825.12734 7058 8856a7f0cf25ac1827ff6c18a9dd9d73 ""
   "Newtonian.tex" 1777004799.8636 6838 4a4dc283690899f6e1fa0ca36fbbfe22 ""
-  "QuantumFermiGas.tex" 1777004923.92347 6937 8b100647e5f69ef5579ab0b4499e720d ""
-  "build/main.aux" 1777007828.94587 9944 ea7f8c462f0bc06727e7f576080d86f2 "pdflatex"
-  "build/main.bbl" 1777007582.43845 17574 76370e820bb7315ab38034f47bec84de "bibtex build/main"
-  "build/main.out" 1777007828.94887 7725 946b284f1e564c43031e8d3e28c74962 "pdflatex"
+  "QuantumFermiGas.tex" 1777007900.66495 6551 84553dd38c7e9e76407dfeba63729ba3 ""
+  "build/main.aux" 1777007908.22847 9944 b6bf9b18e9bfafa5a2133275b128a0ce "pdflatex"
+  "build/main.bbl" 1777007905.79656 17574 76370e820bb7315ab38034f47bec84de "bibtex build/main"
+  "build/main.out" 1777007908.22947 7725 946b284f1e564c43031e8d3e28c74962 "pdflatex"
   "main.tex" 1776996355.70785 414 da2aa1319506fcd87a3c3e83e0f525c3 ""
   "packages.tex" 1776986030.29451 2300 9b90c37b93a72e0c7885572c5e3aa3bb ""
   (generated)
